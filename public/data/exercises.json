@@ -1,0 +1,3586 @@
+[
+  {
+    "id": "13dbf299-0ec6-59c6-b6c9-dcbad5a8f8da",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST01",
+    "name": "Trap-bar deadlift",
+    "category": "strength",
+    "movementPattern": "hinge",
+    "equipment": [
+      "Trap bar",
+      "Weight plates"
+    ],
+    "muscles": [
+      "Gluteals",
+      "Quadriceps",
+      "Hamstrings",
+      "Trunk"
+    ],
+    "quality": "Lower-body maximal force",
+    "cues": [
+      "Stand centrally and brace before the pull.",
+      "Push the floor away and finish tall without leaning back."
+    ],
+    "mistakes": [
+      "Jerking the bar from the floor.",
+      "Continuing when grip is painful or unreliable."
+    ],
+    "regression": "Use higher handles with a lighter load; choose leg press if grip is not comfortable.",
+    "progression": "Increase load using the lower-main rule while preserving the same handle height.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Total external kg, including the trap bar and all plates. Record handle height.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "c59bfb90-8101-50cf-b91f-e7f65abdfdfd",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST02",
+    "name": "Wrist-comfortable safety-bar or back squat",
+    "category": "strength",
+    "movementPattern": "squat",
+    "equipment": [
+      "Squat rack",
+      "Safety bar or barbell",
+      "Weight plates"
+    ],
+    "muscles": [
+      "Quadriceps",
+      "Gluteals",
+      "Trunk"
+    ],
+    "quality": "Lower-body strength through controlled range",
+    "cues": [
+      "Choose a bar position that does not force the symptomatic wrist.",
+      "Keep the whole foot supported and descend to a controlled comfortable depth."
+    ],
+    "mistakes": [
+      "Forcing the wrist into extension.",
+      "Adding depth or load while losing balance."
+    ],
+    "regression": "Use a safety bar or leg press when a standard bar position is uncomfortable.",
+    "progression": "Add load under the lower-main rule; retain the same depth for comparisons.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Total external kg, including the bar and all plates. Record bar type and squat depth.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "a479e02f-f5dc-544d-a7ca-c0abc16f1538",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST03",
+    "name": "Rear-foot-elevated split squat",
+    "category": "strength",
+    "movementPattern": "single-leg squat",
+    "equipment": [
+      "Bench",
+      "Dumbbells or bodyweight"
+    ],
+    "muscles": [
+      "Quadriceps",
+      "Gluteals",
+      "Adductors"
+    ],
+    "quality": "Single-leg force and pelvic control",
+    "cues": [
+      "Keep most pressure through the front foot.",
+      "Let the front knee track with the toes and keep the pelvis level."
+    ],
+    "mistakes": [
+      "Pushing hard from the rear leg.",
+      "Using a rear support so high it changes comfortable position."
+    ],
+    "regression": "Use a floor split squat or light fingertip support.",
+    "progression": "Add repetitions, then load; use a vest or other comfortable load if gripping is limited.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Total external kg across both hands or the vest. Bodyweight is not added to logged load.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "22a32634-4872-5aaa-a69a-c01e9a93e223",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST04",
+    "name": "Hip thrust",
+    "category": "strength",
+    "movementPattern": "hip extension",
+    "equipment": [
+      "Bench",
+      "Barbell or hip-thrust machine",
+      "Pad"
+    ],
+    "muscles": [
+      "Gluteals",
+      "Hamstrings"
+    ],
+    "quality": "Hip-extension strength",
+    "cues": [
+      "Keep ribs stacked over the pelvis.",
+      "Finish with the hips extended and a brief glute squeeze."
+    ],
+    "mistakes": [
+      "Finishing by arching the lower back.",
+      "Placing the bar directly on an unpadded hip crease."
+    ],
+    "regression": "Use a floor glute bridge with bodyweight.",
+    "progression": "Add load once every repetition reaches a controlled full finish.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Total external kg including bar and plates, or the displayed machine load. Record the variant and do not compare variants directly.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "eac6b1d0-6beb-5e81-9030-75c0fcf49b83",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST05",
+    "name": "Leg press",
+    "category": "strength",
+    "movementPattern": "squat",
+    "equipment": [
+      "Leg press machine"
+    ],
+    "muscles": [
+      "Quadriceps",
+      "Gluteals",
+      "Adductors"
+    ],
+    "quality": "Lower-body strength with minimal gripping",
+    "cues": [
+      "Keep the pelvis supported throughout.",
+      "Lower until the chosen range remains comfortable and controlled."
+    ],
+    "mistakes": [
+      "Allowing the pelvis to roll from the pad.",
+      "Bouncing from the bottom or locking knees forcefully."
+    ],
+    "regression": "Reduce load and range.",
+    "progression": "Increase load under the lower-main rule; record machine and seat setting.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Total externally added machine kg or the displayed stack setting. Exclude unknown sled mass and record the exact machine and seat setting.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "57e424b0-b02b-5cb6-9cdc-a6167ea84fc8",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST06",
+    "name": "Seated hamstring curl",
+    "category": "strength",
+    "movementPattern": "knee flexion",
+    "equipment": [
+      "Seated hamstring curl machine"
+    ],
+    "muscles": [
+      "Hamstrings"
+    ],
+    "quality": "Knee-flexor strength",
+    "cues": [
+      "Align the knee with the machine pivot.",
+      "Curl smoothly and control the return."
+    ],
+    "mistakes": [
+      "Lifting the hips to move the weight.",
+      "Dropping the eccentric portion."
+    ],
+    "regression": "Use a lighter load through a comfortable range.",
+    "progression": "Add repetitions before the smallest available load increment.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Displayed machine kg. Record the same machine, settings and bilateral or unilateral version.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "5202aa79-3f47-5003-a869-6bdefafcff18",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST07",
+    "name": "Single-leg Romanian deadlift",
+    "category": "strength",
+    "movementPattern": "single-leg hinge",
+    "equipment": [
+      "Dumbbell or cable",
+      "Optional support"
+    ],
+    "muscles": [
+      "Hamstrings",
+      "Gluteals",
+      "Trunk"
+    ],
+    "quality": "Single-leg hinge strength and balance",
+    "cues": [
+      "Soften the standing knee and hinge from the hip.",
+      "Keep both hip bones facing the floor."
+    ],
+    "mistakes": [
+      "Opening the pelvis excessively.",
+      "Reaching farther by rounding the back."
+    ],
+    "regression": "Use bodyweight and light support or a kickstand stance.",
+    "progression": "Remove support before increasing comfortable load.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Total external kg held across all implements. Record the same hand and support arrangement.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "75c57fed-032b-54d0-b9e4-03eb0cf32a0b",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST08",
+    "name": "Lateral lunge",
+    "category": "strength",
+    "movementPattern": "lateral squat",
+    "equipment": [
+      "Bodyweight or dumbbell"
+    ],
+    "muscles": [
+      "Adductors",
+      "Gluteals",
+      "Quadriceps"
+    ],
+    "quality": "Lateral strength and controlled hip range",
+    "cues": [
+      "Step wide enough to sit into the working hip.",
+      "Keep the working foot planted and push back under control."
+    ],
+    "mistakes": [
+      "Forcing a groin stretch.",
+      "Letting the working knee collapse inward."
+    ],
+    "regression": "Use a shorter step and shallow bodyweight range.",
+    "progression": "Increase controlled range, then add load if the wrist permits.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Total external kg across all held implements. Bodyweight is not added to logged load.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "86f5c3e3-3659-5f10-b7e0-d988ccbcbefd",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST09",
+    "name": "Neutral-grip dumbbell floor press",
+    "category": "strength",
+    "movementPattern": "horizontal push",
+    "equipment": [
+      "Dumbbells",
+      "Floor mat"
+    ],
+    "muscles": [
+      "Pectorals",
+      "Triceps",
+      "Anterior deltoids"
+    ],
+    "quality": "Upper-body pressing strength",
+    "cues": [
+      "Keep palms facing each other and wrists stacked.",
+      "Touch the upper arms to the floor gently before pressing."
+    ],
+    "mistakes": [
+      "Bending the wrist backward.",
+      "Bouncing the elbows or forcing painful range."
+    ],
+    "regression": "Reduce load or use a comfortable neutral-handle press machine.",
+    "progression": "Use upper-main progression only with comfortable gripping and stable wrists.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Kg per dumbbell. A pair of 20 kg dumbbells is logged as 20 kg; volume calculations must multiply external load by two.",
+    "loadMultiplier": 2
+  },
+  {
+    "id": "83c32a38-8c11-545c-b5d4-be21e02c694a",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST10",
+    "name": "Chest-supported neutral-grip row",
+    "category": "strength",
+    "movementPattern": "horizontal pull",
+    "equipment": [
+      "Incline bench",
+      "Dumbbells or row machine"
+    ],
+    "muscles": [
+      "Latissimus dorsi",
+      "Upper back",
+      "Biceps"
+    ],
+    "quality": "Upper-back strength",
+    "cues": [
+      "Keep the chest supported and wrists neutral.",
+      "Pull the elbows back without shrugging."
+    ],
+    "mistakes": [
+      "Lifting the torso to finish a repetition.",
+      "Squeezing harder through wrist pain."
+    ],
+    "regression": "Reduce load or use a supported machine with a comfortable handle.",
+    "progression": "Add controlled repetitions, then load under upper-main progression.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "For a two-dumbbell row, log the combined kg of both dumbbells. For a machine, log displayed stack kg and record the machine. Do not compare these variants directly.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "fc75bb6b-3693-5461-ab90-40ffebcc91b4",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST11",
+    "name": "Neutral-grip lat pulldown",
+    "category": "strength",
+    "movementPattern": "vertical pull",
+    "equipment": [
+      "Cable pulldown",
+      "Neutral handles"
+    ],
+    "muscles": [
+      "Latissimus dorsi",
+      "Upper back",
+      "Biceps"
+    ],
+    "quality": "Vertical pulling strength",
+    "cues": [
+      "Keep a small stable torso lean.",
+      "Pull the elbows toward the ribs with neutral wrists."
+    ],
+    "mistakes": [
+      "Swinging to move the stack.",
+      "Pulling behind the neck or through wrist pain."
+    ],
+    "regression": "Reduce load and choose a comfortable handle width.",
+    "progression": "Increase repetitions or load with the same range and tempo.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Displayed cable-machine kg. Keep the machine, handle and settings identical for comparisons.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "94c63151-6c4e-50a9-b21e-d5303a7c2998",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST12",
+    "name": "Half-kneeling landmine press",
+    "category": "strength",
+    "movementPattern": "angled push",
+    "equipment": [
+      "Landmine",
+      "Barbell",
+      "Kneeling pad"
+    ],
+    "muscles": [
+      "Deltoids",
+      "Triceps",
+      "Trunk"
+    ],
+    "quality": "Angled pressing and trunk control",
+    "cues": [
+      "Stack ribs over the pelvis.",
+      "Press up and forward without twisting."
+    ],
+    "mistakes": [
+      "Arching the lower back.",
+      "Forcing the wrist around an uncomfortable bar end."
+    ],
+    "regression": "Use a lighter bar or comfortable neutral-handle machine press.",
+    "progression": "Add load once trunk position and wrist comfort remain consistent.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Total barbell and plate kg. This is a setup reference, not the force at the hand; record bar length and landmine arrangement.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "04e271c9-f3ad-55b8-b3aa-68b76a7a0fd5",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST13",
+    "name": "Straight-knee calf raise",
+    "category": "strength",
+    "movementPattern": "ankle plantarflexion",
+    "equipment": [
+      "Calf machine or step"
+    ],
+    "muscles": [
+      "Gastrocnemius",
+      "Soleus"
+    ],
+    "quality": "Calf strength",
+    "cues": [
+      "Rise through the ball of the foot without rolling outward.",
+      "Pause briefly at the top and lower under control."
+    ],
+    "mistakes": [
+      "Bouncing through repetitions.",
+      "Losing the foot tripod."
+    ],
+    "regression": "Use two legs and support on a flat surface.",
+    "progression": "Add range, then machine load or single-leg work.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Externally added machine kg or combined held kg. Do not include bodyweight; record unilateral or bilateral version.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "ac7fdccd-537e-5b16-a4cc-2014534eaec2",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST14",
+    "name": "Bent-knee calf raise",
+    "category": "strength",
+    "movementPattern": "ankle plantarflexion",
+    "equipment": [
+      "Seated calf machine"
+    ],
+    "muscles": [
+      "Soleus"
+    ],
+    "quality": "Bent-knee calf capacity",
+    "cues": [
+      "Keep the knees bent and the forefoot supported.",
+      "Move the heels through a controlled comfortable range."
+    ],
+    "mistakes": [
+      "Using hip movement to bounce the load.",
+      "Rushing the lowering phase."
+    ],
+    "regression": "Perform seated bodyweight heel raises.",
+    "progression": "Increase repetitions, then machine load.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Externally added machine kg or displayed stack kg. Do not include bodyweight.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "fb8e6ac0-0017-5db3-811b-ab64c0b537fb",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST15",
+    "name": "Short-lever Copenhagen hold",
+    "category": "strength",
+    "movementPattern": "hip adduction",
+    "equipment": [
+      "Bench or stable low support",
+      "Mat"
+    ],
+    "muscles": [
+      "Adductors",
+      "Lateral trunk"
+    ],
+    "quality": "Adductor and lateral trunk capacity",
+    "cues": [
+      "Support the upper knee rather than the ankle initially.",
+      "Lift into a straight trunk line while breathing."
+    ],
+    "mistakes": [
+      "Starting with a long lever before tolerating the short lever.",
+      "Continuing through groin pain."
+    ],
+    "regression": "Use a side-lying adduction lift or shorter hold.",
+    "progression": "Increase hold time or controlled repetitions before considering a longer lever.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Bodyweight hold. Log seconds and lever length; do not invent a kg load.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "ee067082-1816-5ee4-88d0-aeb45fbb8123",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST16",
+    "name": "Band shoulder external rotation",
+    "category": "strength",
+    "movementPattern": "shoulder rotation",
+    "equipment": [
+      "Light resistance band"
+    ],
+    "muscles": [
+      "Rotator cuff"
+    ],
+    "quality": "Comfortable shoulder capacity",
+    "cues": [
+      "Keep the elbow close to the ribs with a small towel if useful.",
+      "Rotate the upper arm without twisting the torso."
+    ],
+    "mistakes": [
+      "Pulling with the wrist.",
+      "Using a band too heavy to control."
+    ],
+    "regression": "Use a lighter band and shorter comfortable range.",
+    "progression": "Increase repetitions before band resistance.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Record band identity and tension setup in notes. A band colour is not a calibrated kg value.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "fdc943e7-879a-5844-9723-46afe2c9f895",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST17",
+    "name": "Bodyweight split squat",
+    "category": "strength",
+    "movementPattern": "single-leg squat",
+    "equipment": [
+      "Bodyweight",
+      "Optional support"
+    ],
+    "muscles": [
+      "Quadriceps",
+      "Gluteals",
+      "Adductors"
+    ],
+    "quality": "Single-leg control",
+    "cues": [
+      "Use a stance that allows both knees to bend comfortably.",
+      "Lower straight down with pressure through the front foot."
+    ],
+    "mistakes": [
+      "Walking a tightrope with the feet.",
+      "Letting balance failure dictate the range."
+    ],
+    "regression": "Use light support and a shorter range.",
+    "progression": "Increase comfortable range, then use a controlled loaded split squat.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Bodyweight repetitions. Log 0 external kg; do not add bodyweight to volume load.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "108df397-6786-5ad1-adde-a6313d3fe928",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST18",
+    "name": "Low step-up",
+    "category": "strength",
+    "movementPattern": "single-leg squat",
+    "equipment": [
+      "Low stable step"
+    ],
+    "muscles": [
+      "Quadriceps",
+      "Gluteals"
+    ],
+    "quality": "Single-leg force and balance",
+    "cues": [
+      "Place the whole working foot on the step.",
+      "Rise using the upper leg and lower slowly."
+    ],
+    "mistakes": [
+      "Jumping from the trailing foot.",
+      "Using a step that causes pelvic twisting."
+    ],
+    "regression": "Use a lower step and fingertip support.",
+    "progression": "Increase controlled repetitions before height or load.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Bodyweight or total external kg across all implements. Record step height.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "eae5d4b7-d9a4-57ea-b9dd-d40d12851e37",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST19",
+    "name": "Hip abduction",
+    "category": "strength",
+    "movementPattern": "hip abduction",
+    "equipment": [
+      "Hip-abduction machine or light band"
+    ],
+    "muscles": [
+      "Gluteus medius",
+      "Gluteus minimus"
+    ],
+    "quality": "Lateral hip capacity",
+    "cues": [
+      "Keep the pelvis still.",
+      "Move through a comfortable range without leaning."
+    ],
+    "mistakes": [
+      "Rotating the torso to move resistance.",
+      "Using momentum."
+    ],
+    "regression": "Use side-lying bodyweight abduction.",
+    "progression": "Increase repetitions before machine or band resistance.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Displayed machine kg, or band identity in notes. Do not assign an invented kg value to a band.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "2a48d2a0-6c31-5f72-bc21-f3ca1636154d",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST20",
+    "name": "Assisted Nordic curl",
+    "category": "strength",
+    "movementPattern": "knee flexion",
+    "equipment": [
+      "Secure Nordic anchor",
+      "Knee pad",
+      "Assistance band"
+    ],
+    "muscles": [
+      "Hamstrings"
+    ],
+    "quality": "Eccentric knee-flexor capacity",
+    "cues": [
+      "Keep hips extended as the body lowers.",
+      "Use enough assistance to control the movement."
+    ],
+    "mistakes": [
+      "Falling onto a painful wrist.",
+      "Starting with unassisted full-range repetitions."
+    ],
+    "regression": "Use seated hamstring curl or greater band assistance.",
+    "progression": "Reduce assistance gradually while retaining control and a safe padded return.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Bodyweight with assistance. Record band or assistance setting in notes; do not report this as an estimated 1RM.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "ef550062-a617-532b-89e0-973ee599c7dd",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST21",
+    "name": "Belt squat, approved machine or attachment",
+    "category": "strength",
+    "movementPattern": "squat",
+    "equipment": [
+      "Purpose-built belt-squat machine or approved attachment",
+      "Load-rated squat belt"
+    ],
+    "muscles": [
+      "Quadriceps",
+      "Gluteals",
+      "Adductors"
+    ],
+    "quality": "Lower-body force with reduced hand loading",
+    "cues": [
+      "Use a load-rated belt and a purpose-built machine or manufacturer-approved attachment.",
+      "Keep the belt supported over the hips and squat with the whole foot planted.",
+      "Check the release and stop arrangement before the set."
+    ],
+    "mistakes": [
+      "Treating an ordinary lifting belt as a loading attachment.",
+      "Improvising a hanging load or carrying a barbell squat weight into this setup."
+    ],
+    "regression": "Use leg press or controlled bodyweight squats if an approved belt-squat setup is unavailable.",
+    "progression": "Establish a fresh baseline for this exact setup, then use the prescribed strength progression without increasing pain or losing depth.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Total externally added kg on the approved belt-squat setup, or its verified kg display. Record the exact machine or attachment and starting position. Do not include bodyweight or unknown lever mass; establish a fresh baseline for every setup.",
+    "loadMultiplier": 1,
+    "equipmentConfirmationRequired": true,
+    "equipmentNotes": "Confirm a load-rated squat belt on a purpose-built machine or manufacturer-approved attachment. An ordinary lifting belt alone is insufficient."
+  },
+  {
+    "id": "a3442e31-19dc-576d-a52a-8b142bd62865",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST22",
+    "name": "Cable hip flexion with ankle cuff",
+    "category": "strength",
+    "movementPattern": "hip flexion",
+    "equipment": [
+      "Low cable pulley",
+      "Load-rated ankle cuff",
+      "Stable support"
+    ],
+    "muscles": [
+      "Hip flexors",
+      "Trunk"
+    ],
+    "quality": "Controlled forward leg drive and pelvic stability",
+    "cues": [
+      "Fasten the cuff securely above the ankle and stand clear of the cable path.",
+      "Lift the working knee forward while keeping ribs stacked over a level pelvis.",
+      "Use light balance support only in a comfortable wrist position."
+    ],
+    "mistakes": [
+      "Leaning backward to lift the leg.",
+      "Turning a controlled hip movement into a swinging kick."
+    ],
+    "regression": "Use an unloaded standing march or reduce range and resistance.",
+    "progression": "Reach the upper repetition target with a stable pelvis before the smallest available cable increment.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Record the exact cable station, pulley position and cuff setup. Log displayed kg only if the display is labelled kg; record other setting units in notes without inventing a kg conversion.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "42da1fad-389c-5c3c-ac2e-b068e0cfb145",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST23",
+    "name": "Cable hip extension with ankle cuff",
+    "category": "strength",
+    "movementPattern": "hip extension",
+    "equipment": [
+      "Low cable pulley",
+      "Load-rated ankle cuff",
+      "Stable support"
+    ],
+    "muscles": [
+      "Gluteals",
+      "Hamstrings",
+      "Trunk"
+    ],
+    "quality": "Controlled hip extension",
+    "cues": [
+      "Face the cable with a secure ankle cuff and a slight standing-knee bend.",
+      "Move the working leg backward through a small comfortable range.",
+      "Keep the trunk and pelvis still instead of arching the lower back."
+    ],
+    "mistakes": [
+      "Extending the back instead of the hip.",
+      "Using speed to pull the stack off its stops."
+    ],
+    "regression": "Use an unloaded standing hip extension or floor glute bridge.",
+    "progression": "Increase controlled repetitions before cable resistance.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Record the exact cable station, pulley position and cuff setup. Log displayed kg only if the display is labelled kg; record other setting units in notes without inventing a kg conversion.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "673c2818-f0e4-5033-a38d-5ac20e50a2bb",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST24",
+    "name": "Cable hip abduction with ankle cuff",
+    "category": "strength",
+    "movementPattern": "hip abduction",
+    "equipment": [
+      "Low cable pulley",
+      "Load-rated ankle cuff",
+      "Stable support"
+    ],
+    "muscles": [
+      "Gluteus medius",
+      "Gluteus minimus",
+      "Trunk"
+    ],
+    "quality": "Lateral hip strength and single-leg control",
+    "cues": [
+      "Stand side-on and move the outer leg away from the cable.",
+      "Keep toes generally forward and the pelvis level.",
+      "Choose a range that does not require side-bending."
+    ],
+    "mistakes": [
+      "Hiking the working hip.",
+      "Swinging the leg or leaning the torso to move a heavy stack."
+    ],
+    "regression": "Use side-lying bodyweight abduction or a lighter cable setting.",
+    "progression": "Complete the upper repetition target on both sides before increasing resistance.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Record the exact cable station, pulley position and cuff setup. Log displayed kg only if the display is labelled kg; record other setting units in notes without inventing a kg conversion.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "1a872e84-38b4-5568-a63c-b6ffe7163fb3",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST25",
+    "name": "Cable hip adduction with ankle cuff",
+    "category": "strength",
+    "movementPattern": "hip adduction",
+    "equipment": [
+      "Low cable pulley",
+      "Load-rated ankle cuff",
+      "Stable support"
+    ],
+    "muscles": [
+      "Adductors",
+      "Trunk"
+    ],
+    "quality": "Controlled inner-thigh strength",
+    "cues": [
+      "Stand side-on with the cuff on the leg nearest the cable.",
+      "Bring the leg toward the midline through a comfortable range.",
+      "Keep the pelvis level and return slowly."
+    ],
+    "mistakes": [
+      "Forcing a wide groin stretch.",
+      "Crossing farther by twisting the pelvis or swinging the leg."
+    ],
+    "regression": "Use side-lying bodyweight adduction or less range and load.",
+    "progression": "Increase repetitions before the smallest cable increment; groin pain is a reason to reduce or omit.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Record the exact cable station, pulley position and cuff setup. Log displayed kg only if the display is labelled kg; record other setting units in notes without inventing a kg conversion.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "0b3773da-075b-5773-8918-0a87be7ff6c5",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST26",
+    "name": "Multi-hip machine: hip flexion",
+    "category": "strength",
+    "movementPattern": "hip flexion",
+    "equipment": [
+      "Multi-hip machine supporting hip flexion"
+    ],
+    "muscles": [
+      "Hip flexors",
+      "Trunk"
+    ],
+    "quality": "Supported hip-flexion strength",
+    "cues": [
+      "Use this direction only if shown in the actual machine instructions.",
+      "Set the pivot and pad to the manufacturer positions before loading.",
+      "Lift the thigh forward with a level pelvis and controlled return."
+    ],
+    "mistakes": [
+      "Assuming every multi-hip model permits hip flexion.",
+      "Setting the pad or pivot by copying another user."
+    ],
+    "regression": "Use cable hip flexion or an unloaded standing march.",
+    "progression": "Record the exact machine, pad settings and load; add controlled repetitions before resistance.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Record machine, movement direction, pivot and pad settings. Log verified displayed kg only; keep a separate baseline for each machine and direction. A non-kg setting belongs in notes, not a fabricated kg value.",
+    "loadMultiplier": 1,
+    "equipmentSupported": [
+      "hip flexion"
+    ],
+    "equipmentNotes": "Use only if the actual model explicitly supports this direction and its pad/pivot setup."
+  },
+  {
+    "id": "dfa38686-3cb4-52e8-811b-cdf37644c0af",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST27",
+    "name": "Multi-hip machine: hip extension",
+    "category": "strength",
+    "movementPattern": "hip extension",
+    "equipment": [
+      "Multi-hip machine supporting hip extension"
+    ],
+    "muscles": [
+      "Gluteals",
+      "Hamstrings",
+      "Trunk"
+    ],
+    "quality": "Supported hip-extension strength",
+    "cues": [
+      "Confirm the extension setup on the machine placard or manual.",
+      "Move the thigh backward while keeping ribs over the pelvis.",
+      "Use a controlled return without the stack dropping."
+    ],
+    "mistakes": [
+      "Arching the lower back to extend farther.",
+      "Using an unsupported pad position or striking the stops."
+    ],
+    "regression": "Use cable hip extension or a floor glute bridge.",
+    "progression": "Reach the prescribed repetition range with the same machine settings before increasing resistance.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Record machine, movement direction, pivot and pad settings. Log verified displayed kg only; keep a separate baseline for each machine and direction. A non-kg setting belongs in notes, not a fabricated kg value.",
+    "loadMultiplier": 1,
+    "equipmentSupported": [
+      "hip extension"
+    ],
+    "equipmentNotes": "Use only if the actual model explicitly supports this direction and its pad/pivot setup."
+  },
+  {
+    "id": "40d71add-4c4b-51c8-a8a0-2a61ee5c0e27",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST28",
+    "name": "Multi-hip machine: hip abduction",
+    "category": "strength",
+    "movementPattern": "hip abduction",
+    "equipment": [
+      "Multi-hip machine supporting hip abduction"
+    ],
+    "muscles": [
+      "Gluteus medius",
+      "Gluteus minimus",
+      "Trunk"
+    ],
+    "quality": "Supported lateral-hip strength",
+    "cues": [
+      "Set up the abduction direction exactly as shown for the model.",
+      "Move the thigh out to the side with the pelvis level.",
+      "Hold only the support needed for balance in a comfortable wrist position."
+    ],
+    "mistakes": [
+      "Leaning or hiking the pelvis to move the pad.",
+      "Forcing range beyond the machine setup or personal tolerance."
+    ],
+    "regression": "Use cable or side-lying hip abduction.",
+    "progression": "Progress controlled repetitions before resistance with the same pivot and pad settings.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Record machine, movement direction, pivot and pad settings. Log verified displayed kg only; keep a separate baseline for each machine and direction. A non-kg setting belongs in notes, not a fabricated kg value.",
+    "loadMultiplier": 1,
+    "equipmentSupported": [
+      "hip abduction"
+    ],
+    "equipmentNotes": "Use only if the actual model explicitly supports this direction and its pad/pivot setup."
+  },
+  {
+    "id": "ed295091-60cd-5353-904f-e7f8e8d2d031",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST29",
+    "name": "Multi-hip machine: hip adduction",
+    "category": "strength",
+    "movementPattern": "hip adduction",
+    "equipment": [
+      "Multi-hip machine supporting hip adduction"
+    ],
+    "muscles": [
+      "Adductors",
+      "Trunk"
+    ],
+    "quality": "Supported inner-thigh strength",
+    "cues": [
+      "Confirm the adduction setup for this model and start in a comfortable position.",
+      "Bring the thigh toward the midline without twisting the trunk.",
+      "Return slowly and stop before a painful groin stretch."
+    ],
+    "mistakes": [
+      "Using an excessive starting range.",
+      "Letting the load pull the leg suddenly outward."
+    ],
+    "regression": "Use light cable or side-lying hip adduction.",
+    "progression": "Increase repetitions before resistance while retaining the same comfortable range.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Record machine, movement direction, pivot and pad settings. Log verified displayed kg only; keep a separate baseline for each machine and direction. A non-kg setting belongs in notes, not a fabricated kg value.",
+    "loadMultiplier": 1,
+    "equipmentSupported": [
+      "hip adduction"
+    ],
+    "equipmentNotes": "Use only if the actual model explicitly supports this direction and its pad/pivot setup."
+  },
+  {
+    "id": "afa71463-a322-511c-8169-963dd6f93667",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "ST30",
+    "name": "Pneumatic/hydraulic machine squat, model unconfirmed",
+    "category": "strength",
+    "movementPattern": "squat",
+    "equipment": [
+      "Squat resistance machine, exact model to confirm"
+    ],
+    "muscles": [
+      "Quadriceps",
+      "Gluteals",
+      "Trunk"
+    ],
+    "quality": "Controlled machine squat strength",
+    "cues": [
+      "Identify the model and follow its pad, stop and handgrip instructions before using this option.",
+      "Keep both feet grounded throughout the movement.",
+      "Maintain control of the carriage or exercise arm and lower smoothly."
+    ],
+    "mistakes": [
+      "Assuming a power machine permits feet-off-platform jumping.",
+      "Releasing the exercise arm or treating a display setting as free-weight kilograms.",
+      "Increasing speed before the instructed use is confirmed."
+    ],
+    "regression": "Use a familiar leg press or approved belt-squat setup with a fresh load reference.",
+    "progression": "Increase controlled repetitions before the smallest verified setting change. Any fast-concentric use requires model-specific instruction; no jumping is prescribed.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Record the exact machine model, pad and stop positions, resistance setting and the units shown. No kg unit is assumed and loadKg remains blank. Machine settings are not converted to free-weight load, strength volume or estimated 1RM.",
+    "loadMultiplier": 1,
+    "loggingMode": "machineStrength",
+    "equipmentConfirmationRequired": true,
+    "loadKg": null,
+    "equipmentNotes": "Model unconfirmed. The described equipment could be pneumatic (compressed air) rather than hydraulic. Follow the actual model instructions. Keep feet grounded; no machine jumps are prescribed.",
+    "sourceUrls": [
+      "https://www.keiser.com/fitness-equipment/strength-training/a300-squat",
+      "https://d1xdq93s712gxs.cloudfront.net/media/155504_A_MANUAL__USER_A300-SQUAT_SQUAT-PRO-cinv-170170643150107.pdf"
+    ]
+  },
+  {
+    "id": "f498294f-c534-5662-b739-8e7861a505c5",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "CO01",
+    "name": "Dead bug",
+    "category": "core",
+    "movementPattern": "anti-extension",
+    "equipment": [
+      "Mat"
+    ],
+    "muscles": [
+      "Abdominals",
+      "Hip flexors"
+    ],
+    "quality": "Trunk control while limbs move",
+    "cues": [
+      "Exhale gently and keep the ribs down.",
+      "Move only as far as the lower back position stays stable."
+    ],
+    "mistakes": [
+      "Arching to reach farther.",
+      "Holding the breath throughout."
+    ],
+    "regression": "Move one leg at a time with arms resting.",
+    "progression": "Lengthen the leg lever or alternate opposite arm and leg.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "b769de2f-24ae-59f3-bce1-099cfb80d071",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "CO02",
+    "name": "Forearm side plank",
+    "category": "core",
+    "movementPattern": "anti-lateral-flexion",
+    "equipment": [
+      "Mat"
+    ],
+    "muscles": [
+      "Obliques",
+      "Lateral hip"
+    ],
+    "quality": "Lateral trunk endurance",
+    "cues": [
+      "Place the elbow under the shoulder.",
+      "Keep hips aligned and breathe normally."
+    ],
+    "mistakes": [
+      "Rotating the chest down.",
+      "Letting the hips sag."
+    ],
+    "regression": "Bend the knees and shorten the hold.",
+    "progression": "Extend the legs or increase the prescribed hold without losing position.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "e5babb4e-3647-571c-93ec-f6885e3956f8",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "CO03",
+    "name": "Reverse crunch",
+    "category": "core",
+    "movementPattern": "controlled trunk flexion",
+    "equipment": [
+      "Mat"
+    ],
+    "muscles": [
+      "Abdominals"
+    ],
+    "quality": "Controlled posterior pelvic motion",
+    "cues": [
+      "Roll the pelvis gently toward the ribs.",
+      "Lower slowly without swinging the legs."
+    ],
+    "mistakes": [
+      "Throwing the legs overhead.",
+      "Using neck tension to finish."
+    ],
+    "regression": "Use small posterior pelvic tilts.",
+    "progression": "Increase controlled repetitions or slow the lowering phase.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "000f9ab2-86b1-59a4-8726-ec7684f2e35d",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "CO04",
+    "name": "Pallof press",
+    "category": "core",
+    "movementPattern": "anti-rotation",
+    "equipment": [
+      "Cable or light band"
+    ],
+    "muscles": [
+      "Obliques",
+      "Deep trunk"
+    ],
+    "quality": "Resistance to unwanted rotation",
+    "cues": [
+      "Stand or kneel square to the front.",
+      "Press away while resisting the sideways pull."
+    ],
+    "mistakes": [
+      "Turning toward the cable.",
+      "Using painful grip to hold excessive resistance."
+    ],
+    "regression": "Reduce resistance or use a forearm-supported alternative.",
+    "progression": "Lengthen the pause before increasing comfortable resistance.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Displayed cable-machine kg, or band identity in notes. Keep the setup consistent.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "d672a8a2-9916-5828-85ad-c2fe44af75e6",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "CO05",
+    "name": "Forearm plank",
+    "category": "core",
+    "movementPattern": "anti-extension",
+    "equipment": [
+      "Mat"
+    ],
+    "muscles": [
+      "Abdominals",
+      "Gluteals"
+    ],
+    "quality": "Trunk endurance",
+    "cues": [
+      "Place elbows below shoulders and gently brace.",
+      "Maintain a straight trunk while breathing."
+    ],
+    "mistakes": [
+      "Holding until the back sags.",
+      "Clenching the hands unnecessarily."
+    ],
+    "regression": "Use knees on the floor or an elevated forearm support.",
+    "progression": "Extend the lever or add a short hold within the target time.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "12ecff57-e6ea-55dc-9dff-ae96b66a7266",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "CO06",
+    "name": "Bird dog",
+    "category": "core",
+    "movementPattern": "anti-rotation",
+    "equipment": [
+      "Mat",
+      "Optional neutral-wrist handles"
+    ],
+    "muscles": [
+      "Trunk",
+      "Gluteals",
+      "Scapular stabilizers"
+    ],
+    "quality": "Trunk control with alternating limbs",
+    "cues": [
+      "Reach long rather than high.",
+      "Keep the pelvis level and avoid shifting sideways."
+    ],
+    "mistakes": [
+      "Arching the back.",
+      "Loading an uncomfortable extended wrist."
+    ],
+    "regression": "Use a forearm-supported leg reach or a standing supported version.",
+    "progression": "Add an opposite-arm reach and a controlled pause if wrist support is comfortable.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "64a39bec-7e30-5511-8ab4-16a936d9be6b",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "CO07",
+    "name": "Ab-sling supported knee raise",
+    "category": "core",
+    "movementPattern": "controlled trunk flexion",
+    "equipment": [
+      "Load-rated hanging ab slings",
+      "Secure overhead anchor"
+    ],
+    "muscles": [
+      "Abdominals",
+      "Hip flexors"
+    ],
+    "quality": "Controlled pelvic curl with reduced grip demand",
+    "cues": [
+      "Use compatible load-rated slings and a secure anchor, with the upper arms supported as instructed.",
+      "Raise the knees and gently curl the pelvis toward the ribs.",
+      "Lower slowly and keep the body still between repetitions.",
+      "Stop if sling support causes shoulder pain or numbness."
+    ],
+    "mistakes": [
+      "Swinging to lift the legs.",
+      "Assuming arm slings remove shoulder loading.",
+      "Adding weight before controlling bodyweight repetitions."
+    ],
+    "regression": "Use a reverse crunch on the floor or a smaller knee-raise range.",
+    "progression": "Add controlled repetitions, then gradually lengthen the leg lever while keeping the same pelvic curl.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "Bodyweight knee raises. Log 0 external kg and the actual repetitions; bodyweight is not added to strength volume. Record sling setup and leg-lever variant.",
+    "loadMultiplier": 1,
+    "defaultLoadKg": 0,
+    "equipmentNotes": "Check rated slings, attachments and anchor. Slings reduce grip demand but still load the shoulders; stop with pain, tingling or numbness."
+  },
+  {
+    "id": "6a8c5768-e8db-5477-abd3-1250edaec722",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "PW01",
+    "name": "Standing broad jump",
+    "category": "power",
+    "movementPattern": "horizontal jump",
+    "equipment": [
+      "Flat dry surface",
+      "Tape measure"
+    ],
+    "muscles": [
+      "Gluteals",
+      "Quadriceps",
+      "Calves"
+    ],
+    "quality": "Horizontal explosive force",
+    "cues": [
+      "Swing the arms and push the floor away.",
+      "Land quietly on two feet and hold the finish."
+    ],
+    "mistakes": [
+      "Chasing distance with an uncontrolled landing.",
+      "Repeating while visibly fatigued."
+    ],
+    "regression": "Use a submaximal jump or squat-to-calf-raise rehearsal.",
+    "progression": "Increase jump intent while retaining a stable landing.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "d0223335-45ef-5375-83d6-94d50c5fe13e",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "PW02",
+    "name": "Lateral bound and stick",
+    "category": "power",
+    "movementPattern": "lateral jump",
+    "equipment": [
+      "Flat dry surface"
+    ],
+    "muscles": [
+      "Gluteals",
+      "Adductors",
+      "Quadriceps",
+      "Calves"
+    ],
+    "quality": "Lateral power and deceleration",
+    "cues": [
+      "Push sideways from one leg.",
+      "Land over the receiving foot and hold for two seconds."
+    ],
+    "mistakes": [
+      "Letting the knee collapse inward.",
+      "Bounding farther than can be controlled."
+    ],
+    "regression": "Use a lateral step and single-leg balance hold.",
+    "progression": "Increase distance before adding continuous bounds.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "f5538326-f690-5c70-9b37-4c488631ccb8",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "PW03",
+    "name": "Low pogo jumps",
+    "category": "power",
+    "movementPattern": "reactive ankle hop",
+    "equipment": [
+      "Flat resilient dry surface"
+    ],
+    "muscles": [
+      "Calves",
+      "Foot and ankle muscles"
+    ],
+    "quality": "Low-amplitude reactive ankle action",
+    "cues": [
+      "Stay tall with low hops.",
+      "Use quick quiet contacts and stop if rhythm changes."
+    ],
+    "mistakes": [
+      "Turning the drill into deep squat jumps.",
+      "Adding excessive contacts when sore."
+    ],
+    "regression": "Use controlled calf raises or small marching bounces.",
+    "progression": "Add a small number of contacts while maintaining short consistent contacts.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "e853b002-d9b1-55b2-9bbb-10bb9d511202",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "PW04",
+    "name": "Single-leg forward hop and stick",
+    "category": "power",
+    "movementPattern": "single-leg horizontal jump",
+    "equipment": [
+      "Flat dry surface"
+    ],
+    "muscles": [
+      "Gluteals",
+      "Quadriceps",
+      "Calves"
+    ],
+    "quality": "Single-leg propulsion and landing control",
+    "cues": [
+      "Take off and land on the same leg.",
+      "Hold the landing without a second hop."
+    ],
+    "mistakes": [
+      "Using maximal distance before learning the landing.",
+      "Twisting through the knee."
+    ],
+    "regression": "Use a small hop or forward step with a balance hold.",
+    "progression": "Increase controlled distance gradually; log both sides separately.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "275419d4-8ad2-5a0d-89a0-ecae1101bdf6",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "PW05",
+    "name": "Rotational medicine-ball scoop throw",
+    "category": "power",
+    "movementPattern": "rotation",
+    "equipment": [
+      "Light medicine ball",
+      "Approved wall or throw area"
+    ],
+    "muscles": [
+      "Gluteals",
+      "Obliques",
+      "Upper body"
+    ],
+    "quality": "Coordinated rotational power",
+    "cues": [
+      "Turn through the hips and trunk together.",
+      "Use a light ball that can be accelerated crisply.",
+      "Release into an approved clear throw area, then collect the ball after it settles rather than catching a rebound."
+    ],
+    "mistakes": [
+      "Twisting only through the lower back.",
+      "Throwing or catching through wrist pain."
+    ],
+    "regression": "Use unloaded rotational footwork without a throw.",
+    "progression": "Add intent or a step before a small ball-mass increase, only with comfortable wrists.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Actual medicine-ball mass in kg. Throw counts are separate from strength volume load.",
+    "loadMultiplier": 1,
+    "powerMetric": "throw",
+    "sourceUrls": [
+      "https://doi.org/10.1519/SSC.0b013e3181e92911",
+      "https://www.nsca.com/globalassets/education/nsca-coach/nsca-coach-7.3.pdf"
+    ]
+  },
+  {
+    "id": "84969302-dcff-551a-a31c-b6de3d805e89",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "PW06",
+    "name": "Trap-bar jump",
+    "category": "power",
+    "movementPattern": "loaded vertical jump",
+    "equipment": [
+      "Trap bar",
+      "Collars and weight plates if needed",
+      "Clear level landing area"
+    ],
+    "muscles": [
+      "Gluteals",
+      "Quadriceps",
+      "Calves",
+      "Trunk"
+    ],
+    "quality": "Fast lower-body force production",
+    "cues": [
+      "Use a light total load that allows a crisp jump with comfortable, reliable gripping.",
+      "Stand centrally, brace, dip and jump vertically while keeping the bar level.",
+      "Land on two feet under control, settle fully, and reset before each repetition.",
+      "Stop when jump quality, grip or landing control changes."
+    ],
+    "mistakes": [
+      "Using a heavy deadlift working weight for jumps.",
+      "Rebounding rapidly between repetitions or landing asymmetrically.",
+      "Treating a brace as permission to jump with painful gripping."
+    ],
+    "regression": "Use an unloaded bilateral jump with a stable landing when gripping is unsuitable; omit jumping if lower-body symptoms or readiness limit it.",
+    "progression": "Improve consistent take-off and landing quality first. Add only a small amount of load after reviewing actual jump quality; no automatic strength-style load increase.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Total external kg including the trap bar, plates and collars where known. Record handle height and actual jump repetitions. Each bilateral landing is two foot contacts; jump load is not used for Epley estimates or strength-volume progression.",
+    "loadMultiplier": 1,
+    "powerMetric": "loadedJump",
+    "sourceUrls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6724584/"
+    ]
+  },
+  {
+    "id": "d1df5530-69d6-5651-9feb-21a7bdeb2623",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "PW07",
+    "name": "Medicine-ball chest pass",
+    "category": "power",
+    "movementPattern": "horizontal throw",
+    "equipment": [
+      "Light medicine ball suitable for throwing",
+      "Approved wall or clear throw area"
+    ],
+    "muscles": [
+      "Pectorals",
+      "Triceps",
+      "Trunk",
+      "Lower body"
+    ],
+    "quality": "Fast coordinated horizontal force",
+    "cues": [
+      "Hold a light ball at chest height with comfortable wrists and ribs stacked.",
+      "Drive the ball forward quickly with a coordinated stance and clean release.",
+      "Allow the ball to settle before collecting it; catching a rebound is not prescribed.",
+      "Reset posture fully before the next throw."
+    ],
+    "mistakes": [
+      "Choosing a ball so heavy that the throw becomes a slow press.",
+      "Catching a fast rebound with a symptomatic wrist.",
+      "Continuing after speed or control fades."
+    ],
+    "regression": "Use unloaded coordinated arm and leg drive, or omit if the wrist is not comfortable.",
+    "progression": "Increase crisp intent and consistency before a small ball-mass change; keep short sets and the prescribed recovery.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Actual medicine-ball mass in kg and actual throw repetitions. Optional distance is only logged when measured using a consistent setup. Throw counts are separate from strength volume and jump contacts.",
+    "loadMultiplier": 1,
+    "powerMetric": "throw",
+    "sourceUrls": [
+      "https://doi.org/10.1519/SSC.0b013e3181e92911"
+    ]
+  },
+  {
+    "id": "4f32d045-a7e8-54a1-8727-559ae0b05359",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SP01",
+    "name": "10 m acceleration",
+    "category": "speed",
+    "movementPattern": "linear acceleration",
+    "equipment": [
+      "Track or safe straight surface",
+      "Distance markers"
+    ],
+    "muscles": [
+      "Lower body",
+      "Trunk"
+    ],
+    "quality": "First-step acceleration",
+    "cues": [
+      "Start still and push backward into the surface.",
+      "Rise gradually as speed builds."
+    ],
+    "mistakes": [
+      "Rushing recovery between repetitions.",
+      "Sprinting on a slippery surface."
+    ],
+    "regression": "Use a controlled 5 m acceleration or marching drill.",
+    "progression": "Add quality repetitions before extending distance.",
+    "environment": "OUTDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "361483a2-cedd-5ec7-ad4d-34ca7b562f53",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SP02",
+    "name": "20 m acceleration",
+    "category": "speed",
+    "movementPattern": "linear acceleration",
+    "equipment": [
+      "Track or safe straight surface",
+      "Distance markers"
+    ],
+    "muscles": [
+      "Lower body",
+      "Trunk"
+    ],
+    "quality": "Acceleration beyond the first strides",
+    "cues": [
+      "Accelerate smoothly through the finish.",
+      "Leave clear space beyond the line to slow down."
+    ],
+    "mistakes": [
+      "Braking before the finish.",
+      "Adding repetitions after technique deteriorates."
+    ],
+    "regression": "Use 10 m accelerations.",
+    "progression": "Increase speed consistency or a small number of repetitions with full recovery.",
+    "environment": "OUTDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "da2ef76b-b2ed-5e9f-9cf6-a76a798241c9",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SP03",
+    "name": "Sled push",
+    "category": "speed",
+    "movementPattern": "resisted acceleration",
+    "equipment": [
+      "Sled",
+      "Dry sled lane"
+    ],
+    "muscles": [
+      "Quadriceps",
+      "Gluteals",
+      "Calves",
+      "Trunk"
+    ],
+    "quality": "Resisted horizontal force",
+    "cues": [
+      "Use steady force through the legs with a stable trunk.",
+      "Choose a load that permits the intended quick steps."
+    ],
+    "mistakes": [
+      "Making every repetition a slow grind.",
+      "Pushing through painful wrist support."
+    ],
+    "regression": "Reduce load or use a belt-drag option if available and comfortable.",
+    "progression": "Add distance or small load increments without losing the intended speed.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Added plate kg plus empty sled mass only when that mass is known. Record sled, surface and whether base mass is included.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "ec89ee03-f8f7-5edf-bbb8-4c35c2403eb8",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SP04",
+    "name": "5-10-5 change of direction",
+    "category": "speed",
+    "movementPattern": "change of direction",
+    "equipment": [
+      "Flat dry surface",
+      "Three lines",
+      "Timer"
+    ],
+    "muscles": [
+      "Lower body",
+      "Trunk"
+    ],
+    "quality": "Acceleration, braking and reacceleration",
+    "cues": [
+      "Lower the centre of mass before the turn.",
+      "Push away from each line with the knee tracking the foot."
+    ],
+    "mistakes": [
+      "Comparing different line spacing.",
+      "Reaching for a line with a painful wrist."
+    ],
+    "regression": "Practise controlled turns at reduced speed.",
+    "progression": "Increase speed using identical distances and touch rules; train both start directions.",
+    "environment": "OUTDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "169f9752-de9e-5d27-8d0c-6b569fc577cd",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SP05",
+    "name": "Chest-supported resisted runner, model unconfirmed",
+    "category": "speed",
+    "movementPattern": "resisted alternating leg drive",
+    "equipment": [
+      "Chest-supported resisted running machine, exact model to confirm"
+    ],
+    "muscles": [
+      "Quadriceps",
+      "Gluteals",
+      "Hamstrings",
+      "Calves",
+      "Trunk"
+    ],
+    "quality": "Brief resisted leg-drive power",
+    "cues": [
+      "Identify the model and confirm the permitted exercise and setup with its instructions.",
+      "Adjust the chest support and secure the feet as the actual model requires.",
+      "Keep the torso supported and use the handles as instructed without painful gripping.",
+      "Alternate leg drive smoothly and bring the moving arms or pedals to a controlled stop."
+    ],
+    "mistakes": [
+      "Treating the machine as a free-running treadmill or comparing its output with a track sprint.",
+      "Guessing what the resistance display units mean.",
+      "Training fast before learning the stops, supports and release procedure."
+    ],
+    "regression": "Use a familiar indoor sled option if wrist-comfortable, or the prescribed easy-bike alternative when speed work is inappropriate.",
+    "progression": "Record the exact model, support setting, resistance units and bout duration. Keep output crisp; any setting increase is specific to this machine, not a calculated sprint-speed gain.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Record the exact model, support settings, resistance setting and its actual units, bout seconds and optional displayed watts. No kg unit is assumed and loadKg remains blank. Do not record machine output as overground distance, sprint speed or a timed sprint result.",
+    "loadMultiplier": 1,
+    "loggingMode": "machineSpeed",
+    "equipmentConfirmationRequired": true,
+    "loadKg": null,
+    "equipmentNotes": "The chest-supported description resembles a resisted runner such as the Keiser A300, but the model is unconfirmed. This is a machine-specific alternative, not an overground sprint test.",
+    "sourceUrls": [
+      "https://www.keiser.com/fitness-equipment/strength-training/a300-runner",
+      "https://d1xdq93s712gxs.cloudfront.net/media/325500_B_MANUAL__USER_A300-RUNNER-cinv-1769201563168160.pdf"
+    ]
+  },
+  {
+    "id": "c18bf3ae-103b-5fcf-8c76-94e411c5a36b",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "CN01",
+    "name": "Easy aerobic bike",
+    "category": "conditioning",
+    "movementPattern": "aerobic continuous",
+    "equipment": [
+      "Exercise bike"
+    ],
+    "muscles": [
+      "Cardiorespiratory system",
+      "Lower body"
+    ],
+    "quality": "Aerobic base and easy recovery work",
+    "cues": [
+      "Use a pace that allows complete sentences.",
+      "Keep breathing and cadence steady."
+    ],
+    "mistakes": [
+      "Turning an easy session into a hard interval workout.",
+      "Leaning heavily through a painful wrist."
+    ],
+    "regression": "Shorten the ride or use an easy walk.",
+    "progression": "Increase easy duration before intensity.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "b9363c33-6ed9-5b24-bbe1-bd440056aff3",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "CN02",
+    "name": "Bike aerobic intervals",
+    "category": "conditioning",
+    "movementPattern": "aerobic intervals",
+    "equipment": [
+      "Exercise bike"
+    ],
+    "muscles": [
+      "Cardiorespiratory system",
+      "Lower body"
+    ],
+    "quality": "Sustained aerobic power",
+    "cues": [
+      "Choose an effort repeatable across all work intervals.",
+      "Use the recovery period to bring breathing under control."
+    ],
+    "mistakes": [
+      "Starting with a maximal sprint.",
+      "Ignoring a large output drop."
+    ],
+    "regression": "Reduce work duration or use an easy continuous ride.",
+    "progression": "Add one interval or extend work time under the phase prescription.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "15ebe300-7a6c-5a74-9270-3b5e2a48c363",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "CN03",
+    "name": "Bike short power intervals",
+    "category": "conditioning",
+    "movementPattern": "short sprint intervals",
+    "equipment": [
+      "Exercise bike or assault bike"
+    ],
+    "muscles": [
+      "Lower body",
+      "Cardiorespiratory system"
+    ],
+    "quality": "Brief high-power output with long recovery",
+    "cues": [
+      "Accelerate decisively during the short work bout.",
+      "Take the complete prescribed easy recovery."
+    ],
+    "mistakes": [
+      "Shortening recovery until speed collapses.",
+      "Using painful arm drive on the assault bike."
+    ],
+    "regression": "Use a lower-intensity effort or legs-only stationary bike.",
+    "progression": "Add a small number of high-quality repetitions before shortening recovery.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "a8737cd5-54d5-599c-9b53-675bff615580",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "CN04",
+    "name": "Bike repeated bursts",
+    "category": "conditioning",
+    "movementPattern": "repeat-sprint conditioning",
+    "equipment": [
+      "Exercise bike or assault bike"
+    ],
+    "muscles": [
+      "Lower body",
+      "Cardiorespiratory system"
+    ],
+    "quality": "Repeat hard efforts while managing fatigue",
+    "cues": [
+      "Aim for consistent work output across rounds.",
+      "Use an honest session RPE after finishing."
+    ],
+    "mistakes": [
+      "Adding this after an unexpectedly hard ice session.",
+      "Treating every repetition as an uncontrolled maximal effort."
+    ],
+    "regression": "Reduce rounds or choose easy aerobic work.",
+    "progression": "Progress only one of rounds, work time or recovery at a time.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "8b5719d7-0027-5ae9-8790-0970adfe0c97",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "CN05",
+    "name": "Tempo run",
+    "category": "conditioning",
+    "movementPattern": "aerobic running",
+    "equipment": [
+      "Track",
+      "Running shoes"
+    ],
+    "muscles": [
+      "Cardiorespiratory system",
+      "Lower body"
+    ],
+    "quality": "Controlled aerobic running rhythm",
+    "cues": [
+      "Run smoothly at the prescribed submaximal effort.",
+      "Maintain comfortable mechanics through each repetition."
+    ],
+    "mistakes": [
+      "Turning tempo work into repeated sprinting.",
+      "Running fast on wet or icy ground."
+    ],
+    "regression": "Use run-walk intervals or an easy bike.",
+    "progression": "Add total controlled distance before increasing pace.",
+    "environment": "OUTDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "292e6478-83da-5c34-ab00-dbd6e79bd04e",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "CN06",
+    "name": "Easy walk",
+    "category": "conditioning",
+    "movementPattern": "easy locomotion",
+    "equipment": [
+      "Comfortable footwear"
+    ],
+    "muscles": [
+      "Cardiorespiratory system",
+      "Lower body"
+    ],
+    "quality": "Low-demand movement and recovery",
+    "cues": [
+      "Choose a comfortable conversational pace.",
+      "Use safe, well-lit footing."
+    ],
+    "mistakes": [
+      "Treating the walk as a fitness test.",
+      "Forcing duration when unwell."
+    ],
+    "regression": "Use a shorter indoor walk.",
+    "progression": "Increase comfortable duration if desired.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "767b73e1-4ae4-50c6-b300-74827c62d081",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SK01",
+    "name": "Narrow stickhandling",
+    "category": "skill",
+    "movementPattern": "puck control",
+    "equipment": [
+      "Stick",
+      "Green Biscuit or suitable ball",
+      "Two markers"
+    ],
+    "muscles": [
+      "Hands and forearms",
+      "Trunk"
+    ],
+    "quality": "Controlled forehand-backhand contact",
+    "cues": [
+      "Keep the bottom hand relaxed enough to slide.",
+      "Use the same narrow lane when comparing scores."
+    ],
+    "mistakes": [
+      "Counting uncontrolled taps as successful touches.",
+      "Continuing when wrist symptoms build."
+    ],
+    "regression": "Slow down and shorten the bout.",
+    "progression": "Increase clean contacts, then add a visual cue without increasing session duration.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "2a2591ed-b66c-5e99-ab8b-460e90082690",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SK02",
+    "name": "Wide stickhandling",
+    "category": "skill",
+    "movementPattern": "puck control",
+    "equipment": [
+      "Stick",
+      "Green Biscuit or suitable ball",
+      "Clear space"
+    ],
+    "muscles": [
+      "Hands and forearms",
+      "Trunk"
+    ],
+    "quality": "Comfortable handling range",
+    "cues": [
+      "Move the puck across the body within a comfortable reach.",
+      "Let the lower hand slide along the shaft."
+    ],
+    "mistakes": [
+      "Reaching beyond the available pad.",
+      "Forcing wrist range at the end of the movement."
+    ],
+    "regression": "Reduce width and speed.",
+    "progression": "Add a small side-step while preserving control.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "81067a8d-b211-51ea-90cb-573dd820e474",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SK03",
+    "name": "Forward-back stickhandling",
+    "category": "skill",
+    "movementPattern": "puck control",
+    "equipment": [
+      "Stick",
+      "Green Biscuit or suitable ball"
+    ],
+    "muscles": [
+      "Hands and forearms",
+      "Trunk"
+    ],
+    "quality": "Puck control beside the body",
+    "cues": [
+      "Move the puck forward and back beside the feet.",
+      "Keep the body quiet and the grip comfortable."
+    ],
+    "mistakes": [
+      "Dragging with excessive force.",
+      "Losing the puck behind the body."
+    ],
+    "regression": "Use a shorter forward-back path.",
+    "progression": "Add a lateral movement to create a repeatable pattern.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "7bf17c66-6e65-5162-bd17-c9f00126ffdd",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SK04",
+    "name": "Figure-eight stickhandling",
+    "category": "skill",
+    "movementPattern": "puck control",
+    "equipment": [
+      "Stick",
+      "Puck or ball",
+      "Two low markers"
+    ],
+    "muscles": [
+      "Hands and forearms",
+      "Trunk"
+    ],
+    "quality": "Changing blade angle and direction",
+    "cues": [
+      "Trace the same path around both markers.",
+      "Keep movements smooth before increasing speed."
+    ],
+    "mistakes": [
+      "Changing marker spacing between tests.",
+      "Using wrist force to rescue every lost puck."
+    ],
+    "regression": "Increase marker spacing and slow down.",
+    "progression": "Reverse direction on an external cue.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "7b13dc5d-349b-5b92-9a68-0e38ca365d99",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SK05",
+    "name": "Controlled toe drag",
+    "category": "skill",
+    "movementPattern": "puck manipulation",
+    "equipment": [
+      "Stick",
+      "Puck or ball",
+      "Low marker"
+    ],
+    "muscles": [
+      "Hands and forearms",
+      "Trunk"
+    ],
+    "quality": "Drawing the puck into a protected position",
+    "cues": [
+      "Use a small controlled drag toward a comfortable protected position.",
+      "Reset between repetitions."
+    ],
+    "mistakes": [
+      "Forcing a large drag with the top wrist.",
+      "Doing rapid repeated drags through soreness."
+    ],
+    "regression": "Use a simple two-hand lateral pull.",
+    "progression": "Add a shoulder fake and controlled exit step only if symptom-free.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "78bae050-5e65-5a0b-82d4-836e189f81c4",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SK06",
+    "name": "Scan and identify while handling",
+    "category": "skill",
+    "movementPattern": "perception and puck control",
+    "equipment": [
+      "Stick",
+      "Puck or ball",
+      "Visual cue or partner"
+    ],
+    "muscles": [
+      "Hands and forearms",
+      "Visual attention"
+    ],
+    "quality": "Purposeful scanning with puck control",
+    "cues": [
+      "Identify the cue rather than just looking upward.",
+      "Return attention to the puck when necessary."
+    ],
+    "mistakes": [
+      "Keeping the head rigidly up without reading anything.",
+      "Prioritising touch count over correct decisions."
+    ],
+    "regression": "Use slow simple control and fewer cues.",
+    "progression": "Let the cue determine a left or right exit.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "b5a9fb9e-f542-5d6b-a3e1-1f1d24802d09",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SK07",
+    "name": "Puck-protection footwork",
+    "category": "skill",
+    "movementPattern": "puck protection",
+    "equipment": [
+      "Stick",
+      "Puck or ball",
+      "Clear space"
+    ],
+    "muscles": [
+      "Lower body",
+      "Trunk",
+      "Hands"
+    ],
+    "quality": "Body positioning around the puck",
+    "cues": [
+      "Move the body between the imagined defender and puck.",
+      "Use short stable steps and scan before turning."
+    ],
+    "mistakes": [
+      "Leaving the puck exposed while moving the feet.",
+      "Twisting the wrist to compensate for poor foot position."
+    ],
+    "regression": "Rehearse the footwork without a stick.",
+    "progression": "Add a turn or reactive cue; practise live pressure on ice with a coach.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "bd432d03-6ce8-5f8c-b4b8-d25dd2f850b0",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SK08",
+    "name": "Timed handling obstacle course",
+    "category": "skill",
+    "movementPattern": "puck control and movement",
+    "equipment": [
+      "Stick",
+      "Puck or ball",
+      "Three low markers",
+      "Timer"
+    ],
+    "muscles": [
+      "Lower body",
+      "Hands",
+      "Trunk"
+    ],
+    "quality": "Repeatable handling performance",
+    "cues": [
+      "Keep marker spacing and start rules identical.",
+      "Record time and errors separately."
+    ],
+    "mistakes": [
+      "Changing the course to obtain a faster score.",
+      "Ignoring errors because the time improved."
+    ],
+    "regression": "Complete the course untimed.",
+    "progression": "Add a randomized final exit after establishing a repeatable baseline.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "fc18e1ae-14c7-5ed8-a57b-d673124c0510",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SK09",
+    "name": "One-hand control: locked initially",
+    "category": "skill",
+    "movementPattern": "one-hand puck control",
+    "equipment": [
+      "Stick",
+      "Puck or ball"
+    ],
+    "muscles": [
+      "Top-hand forearm",
+      "Shoulder"
+    ],
+    "quality": "Reference drill, not initially scheduled",
+    "cues": [
+      "This drill remains locked while left top-hand ECU symptoms limit normal handling.",
+      "Use only after appropriate clinical advice and demonstrated ordinary handling tolerance."
+    ],
+    "mistakes": [
+      "Treating one-hand work as automatic wrist rehabilitation.",
+      "Adding weighted sticks."
+    ],
+    "regression": "Use comfortable two-hand control or a no-stick visual drill.",
+    "progression": "Consider very short easy bouts only after the restriction has been reviewed.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "1acdef2e-fc96-5bb2-ba64-646782922bab",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SK10",
+    "name": "Handling after effort: locked initially",
+    "category": "skill",
+    "movementPattern": "puck control under fatigue",
+    "equipment": [
+      "Stick",
+      "Puck or ball",
+      "Safe clear space"
+    ],
+    "muscles": [
+      "Hands",
+      "Trunk",
+      "Lower body"
+    ],
+    "quality": "Reference drill for later fatigue-tolerant skill",
+    "cues": [
+      "Keep this drill locked until normal handling and total workload are well tolerated.",
+      "Stop when control or wrist comfort deteriorates."
+    ],
+    "mistakes": [
+      "Using fatigue to justify poor technique.",
+      "Adding a second daily handling session despite symptoms."
+    ],
+    "regression": "Practise fresh or use no-stick scanning after easy exercise.",
+    "progression": "Add one short high-quality bout after moderate effort, not an exhaustive circuit.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "e9e2d420-b601-5678-8666-34dfc0a9d8b1",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SH01",
+    "name": "Wrist-shot target block",
+    "category": "skill",
+    "movementPattern": "shooting",
+    "equipment": [
+      "Stick",
+      "Regular puck",
+      "Shooting pad",
+      "Goal and safe backstop"
+    ],
+    "muscles": [
+      "Lower body",
+      "Trunk",
+      "Upper body"
+    ],
+    "quality": "Accurate wrist-shot execution",
+    "cues": [
+      "Choose the intended target before each shot.",
+      "Coordinate the body and stick, then record every attempt including misses."
+    ],
+    "mistakes": [
+      "Using an Original Green Biscuit for shooting.",
+      "Adding shots after wrist control deteriorates."
+    ],
+    "regression": "Use a low-force dry rehearsal or the indoor video drill.",
+    "progression": "Improve target accuracy before adding shots, distance or velocity.",
+    "environment": "OUTDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "572a8141-6446-5591-a98c-36b97c7fd157",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SH02",
+    "name": "Snap-shot release block",
+    "category": "skill",
+    "movementPattern": "shooting",
+    "equipment": [
+      "Stick",
+      "Regular puck",
+      "Shooting pad",
+      "Goal and backstop",
+      "Optional video"
+    ],
+    "muscles": [
+      "Lower body",
+      "Trunk",
+      "Upper body"
+    ],
+    "quality": "Compact preparation and quick release",
+    "cues": [
+      "Begin from a repeatable puck position.",
+      "Use a compact release and retain the intended target."
+    ],
+    "mistakes": [
+      "Timing different start events between attempts.",
+      "Forcing speed through painful gripping."
+    ],
+    "regression": "Use a controlled dry release rehearsal.",
+    "progression": "Reduce unnecessary preparation while maintaining accuracy.",
+    "environment": "OUTDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "f0257ff6-8bb0-57bd-9d83-889a158d79d5",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SH03",
+    "name": "Backhand target block",
+    "category": "skill",
+    "movementPattern": "shooting",
+    "equipment": [
+      "Stick",
+      "Regular puck",
+      "Shooting pad",
+      "Goal and backstop"
+    ],
+    "muscles": [
+      "Lower body",
+      "Trunk",
+      "Upper body"
+    ],
+    "quality": "Controlled backhand accuracy",
+    "cues": [
+      "Set a stable base and a clear target.",
+      "Keep the release compact rather than forcing height."
+    ],
+    "mistakes": [
+      "Scooping only with the wrist.",
+      "Counting a hit in the wrong zone as intended-target accuracy."
+    ],
+    "regression": "Use a comfortable low-force backhand pass or dry rehearsal.",
+    "progression": "Add target variation or a simple forehand-to-backhand transition.",
+    "environment": "OUTDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "d4c30730-e395-5b7e-bf33-7eabef058cff",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SH04",
+    "name": "Angle-change shooting",
+    "category": "skill",
+    "movementPattern": "shooting and deception",
+    "equipment": [
+      "Stick",
+      "Regular puck",
+      "Adequate pad space",
+      "Goal and backstop"
+    ],
+    "muscles": [
+      "Lower body",
+      "Trunk",
+      "Upper body"
+    ],
+    "quality": "Changing the release angle",
+    "cues": [
+      "Move the puck once into the new angle and release.",
+      "Keep the movement within the safe pad area."
+    ],
+    "mistakes": [
+      "Pulling beyond the pad edge.",
+      "Adding several extra touches before every shot."
+    ],
+    "regression": "Rehearse foot and puck positioning without shooting.",
+    "progression": "Choose the release angle from an external cue.",
+    "environment": "OUTDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "ddbca02c-2dd2-5446-9802-e5de031cb07a",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SH05",
+    "name": "Shooting off a pass",
+    "category": "skill",
+    "movementPattern": "receiving and shooting",
+    "equipment": [
+      "Stick",
+      "Regular puck",
+      "Pad",
+      "Goal and backstop",
+      "Partner or rebounder"
+    ],
+    "muscles": [
+      "Whole body",
+      "Visual attention"
+    ],
+    "quality": "Receiving into an efficient release",
+    "cues": [
+      "Scan before receiving and prepare the blade.",
+      "Adjust the feet to the pass rather than forcing a difficult wrist position."
+    ],
+    "mistakes": [
+      "Using an unsafe or unpredictable rebound setup.",
+      "Rushing before the puck is controllable."
+    ],
+    "regression": "Receive and settle before a controlled shot, or rehearse the receive indoors.",
+    "progression": "Progress from receive-and-shoot to a true one-timer only with control and tolerance.",
+    "environment": "OUTDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "eb8daa5c-227d-5898-9049-afd35a69fc12",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SH06",
+    "name": "Indoor dry-release footwork",
+    "category": "skill",
+    "movementPattern": "shooting rehearsal",
+    "equipment": [
+      "Clear indoor space",
+      "Optional stick"
+    ],
+    "muscles": [
+      "Lower body",
+      "Trunk"
+    ],
+    "quality": "Release sequencing without puck flight",
+    "cues": [
+      "Rehearse stance, target choice and a compact low-force movement.",
+      "Log rehearsal repetitions, never actual shots or accuracy."
+    ],
+    "mistakes": [
+      "Swinging a stick in an uncleared room.",
+      "Treating this as equivalent to a measured shot."
+    ],
+    "regression": "Use body-only footwork and visualisation.",
+    "progression": "Add a cue-driven angle change while retaining a controlled low-force movement.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "4cfedcce-18b7-5d68-8a4d-26205fc11470",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "SH07",
+    "name": "Video scan and decision drill",
+    "category": "skill",
+    "movementPattern": "perception and decision",
+    "equipment": [
+      "Phone or computer",
+      "Hockey clip"
+    ],
+    "muscles": [
+      "Visual attention",
+      "Decision-making"
+    ],
+    "quality": "Reading options with no wrist loading",
+    "cues": [
+      "Pause before the puck arrives and identify pressure, teammates and space.",
+      "Choose an action before viewing the outcome."
+    ],
+    "mistakes": [
+      "Watching passively without making a decision.",
+      "Assuming a correct video answer guarantees on-ice execution."
+    ],
+    "regression": "Use a still image and unlimited thinking time.",
+    "progression": "Reduce decision time or use unfamiliar situations.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "6db966d6-9d94-5244-a123-cae7d7235017",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO01",
+    "name": "Knee-over-toe ankle rocks",
+    "category": "mobility",
+    "movementPattern": "ankle dorsiflexion",
+    "equipment": [
+      "Wall or support"
+    ],
+    "muscles": [
+      "Ankle and calf"
+    ],
+    "quality": "Controlled ankle range",
+    "cues": [
+      "Keep the heel down and track the knee over the toes.",
+      "Use gentle repeated movement."
+    ],
+    "mistakes": [
+      "Lifting the heel to gain range.",
+      "Forcing a painful pinch."
+    ],
+    "regression": "Shorten the movement.",
+    "progression": "Increase comfortable range without changing foot position.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "0a740476-abc5-5185-8a7c-059545059192",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO02",
+    "name": "90/90 hip switches",
+    "category": "mobility",
+    "movementPattern": "hip rotation",
+    "equipment": [
+      "Mat"
+    ],
+    "muscles": [
+      "Hip rotators"
+    ],
+    "quality": "Controlled hip internal and external rotation",
+    "cues": [
+      "Rotate between comfortable seated hip positions.",
+      "Use hands for light support only if the wrist is comfortable."
+    ],
+    "mistakes": [
+      "Forcing the knees to the floor.",
+      "Pushing through a sharp hip pinch."
+    ],
+    "regression": "Use a supported seated rotation with less knee bend.",
+    "progression": "Reduce hand support and move slowly through the same comfortable range.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "c8436738-dbc5-5ba9-812a-2d58023f7236",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO03",
+    "name": "Standing lateral adductor shift",
+    "category": "mobility",
+    "movementPattern": "lateral hip mobility",
+    "equipment": [
+      "Clear floor"
+    ],
+    "muscles": [
+      "Adductors",
+      "Hip muscles"
+    ],
+    "quality": "Dynamic groin and hip preparation",
+    "cues": [
+      "Shift gently from one bent knee toward the other.",
+      "Keep feet planted and the range comfortable."
+    ],
+    "mistakes": [
+      "Bouncing at end range.",
+      "Treating the drill as a maximal flexibility test."
+    ],
+    "regression": "Use a narrower stance.",
+    "progression": "Increase comfortable range gradually.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "22955165-0fdd-5337-8405-c4be959f66a1",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO04",
+    "name": "Reverse lunge with thoracic rotation",
+    "category": "mobility",
+    "movementPattern": "lunge and rotation",
+    "equipment": [
+      "Clear floor"
+    ],
+    "muscles": [
+      "Hip flexors",
+      "Gluteals",
+      "Thoracic region"
+    ],
+    "quality": "Dynamic lower-body and trunk preparation",
+    "cues": [
+      "Step back under control.",
+      "Rotate the upper back gently toward the front leg."
+    ],
+    "mistakes": [
+      "Twisting through the knee.",
+      "Using speed instead of balance."
+    ],
+    "regression": "Use a supported split stance with a small turn.",
+    "progression": "Increase smooth range while retaining balance.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "ed1dfcbf-81d8-5cdb-8c91-754d000ed322",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO05",
+    "name": "Bodyweight glute bridge",
+    "category": "mobility",
+    "movementPattern": "hip extension activation",
+    "equipment": [
+      "Mat"
+    ],
+    "muscles": [
+      "Gluteals",
+      "Hamstrings"
+    ],
+    "quality": "Warm-up hip extension",
+    "cues": [
+      "Press through the feet and lift the pelvis.",
+      "Finish without arching the back."
+    ],
+    "mistakes": [
+      "Pushing only through the toes.",
+      "Holding the breath."
+    ],
+    "regression": "Use a shorter lift.",
+    "progression": "Add a brief pause or controlled marching bridge.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "f2dd41fc-7d91-55c6-97b5-65789b289154",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO06",
+    "name": "Standing thoracic rotation",
+    "category": "mobility",
+    "movementPattern": "thoracic rotation",
+    "equipment": [
+      "Clear floor"
+    ],
+    "muscles": [
+      "Thoracic region",
+      "Trunk"
+    ],
+    "quality": "Comfortable upper-back rotation",
+    "cues": [
+      "Keep hips mostly forward.",
+      "Turn the upper body gently in both directions."
+    ],
+    "mistakes": [
+      "Forcing a large lower-back twist.",
+      "Moving through pain."
+    ],
+    "regression": "Use a smaller seated rotation.",
+    "progression": "Increase comfortable range while keeping the pelvis steady.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "7a91c2f1-96e8-5818-b970-fec9ec019338",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO07",
+    "name": "Shoulder circles",
+    "category": "mobility",
+    "movementPattern": "shoulder motion",
+    "equipment": [
+      "Clear space"
+    ],
+    "muscles": [
+      "Shoulder girdle"
+    ],
+    "quality": "Gentle shoulder preparation",
+    "cues": [
+      "Make controlled circles within a comfortable range.",
+      "Keep neck and grip relaxed."
+    ],
+    "mistakes": [
+      "Swinging forcefully into painful range.",
+      "Shrugging throughout."
+    ],
+    "regression": "Use smaller circles.",
+    "progression": "Increase comfortable range slowly.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "9c301fe6-bf95-59a8-a016-b54ab75e0c57",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO08",
+    "name": "Gentle comfortable wrist motion",
+    "category": "mobility",
+    "movementPattern": "wrist motion",
+    "equipment": [
+      "None"
+    ],
+    "muscles": [
+      "Wrist and forearm"
+    ],
+    "quality": "Symptom-aware movement check",
+    "cues": [
+      "Move gently only through a comfortable range.",
+      "Notice symptom change rather than stretching harder."
+    ],
+    "mistakes": [
+      "Forcing end-range wrist positions.",
+      "Using this check as clearance for painful gripping."
+    ],
+    "regression": "Omit the movement if it aggravates symptoms.",
+    "progression": "Follow clinician guidance; do not automatically add resistance.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "200767fa-3b9b-592f-9751-df6560ed7112",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO09",
+    "name": "Half-kneeling hip-flexor stretch",
+    "category": "mobility",
+    "movementPattern": "hip flexor stretch",
+    "equipment": [
+      "Knee pad"
+    ],
+    "muscles": [
+      "Hip flexors"
+    ],
+    "quality": "Comfortable anterior hip range",
+    "cues": [
+      "Gently tuck the pelvis and squeeze the rear glute.",
+      "Move forward a small amount without arching."
+    ],
+    "mistakes": [
+      "Leaning back through the lower spine.",
+      "Forcing a front-hip pinch."
+    ],
+    "regression": "Use a standing split-stance stretch.",
+    "progression": "Increase comfortable hold time within the prescription.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "a8d79a83-f15f-5d3b-a66c-841924da333f",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO10",
+    "name": "Adductor rockback",
+    "category": "mobility",
+    "movementPattern": "adductor mobility",
+    "equipment": [
+      "Mat",
+      "Optional forearm support"
+    ],
+    "muscles": [
+      "Adductors"
+    ],
+    "quality": "Comfortable inner-thigh range",
+    "cues": [
+      "Extend one leg sideways and gently move the hips back.",
+      "Use forearm support if hand support bothers the wrist."
+    ],
+    "mistakes": [
+      "Forcing a deep groin stretch.",
+      "Loading the wrist in an uncomfortable position."
+    ],
+    "regression": "Use a small standing lateral shift.",
+    "progression": "Increase comfortable range before hold duration.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "c1a0f96f-b20b-51d9-ab51-0805d30d98bd",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO11",
+    "name": "Supine figure-four stretch",
+    "category": "mobility",
+    "movementPattern": "hip external rotation stretch",
+    "equipment": [
+      "Mat"
+    ],
+    "muscles": [
+      "Gluteals",
+      "Posterior hip"
+    ],
+    "quality": "Comfortable posterior hip range",
+    "cues": [
+      "Cross one ankle over the opposite thigh.",
+      "Draw the legs toward you gently without twisting the knee."
+    ],
+    "mistakes": [
+      "Pushing hard on the knee.",
+      "Holding through numbness or sharp pain."
+    ],
+    "regression": "Leave the supporting foot on the floor.",
+    "progression": "Increase comfortable hold time without forcing range.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "124b5077-f970-5309-addd-b00b1a988bcc",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO12",
+    "name": "Straight-knee calf stretch",
+    "category": "mobility",
+    "movementPattern": "calf stretch",
+    "equipment": [
+      "Wall or support"
+    ],
+    "muscles": [
+      "Gastrocnemius"
+    ],
+    "quality": "Comfortable calf length",
+    "cues": [
+      "Keep the rear heel planted and knee straight but not locked.",
+      "Lean forward gently."
+    ],
+    "mistakes": [
+      "Turning the rear foot out excessively.",
+      "Bouncing."
+    ],
+    "regression": "Shorten the stance.",
+    "progression": "Increase comfortable hold time or a small amount of range.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "ad288f40-0e92-5abd-b5db-906ef95a2b38",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO13",
+    "name": "Bent-knee calf stretch",
+    "category": "mobility",
+    "movementPattern": "calf stretch",
+    "equipment": [
+      "Wall or support"
+    ],
+    "muscles": [
+      "Soleus"
+    ],
+    "quality": "Comfortable ankle range with bent knee",
+    "cues": [
+      "Bend the rear knee while keeping the heel down.",
+      "Keep pressure gentle."
+    ],
+    "mistakes": [
+      "Lifting the heel.",
+      "Forcing a front-ankle pinch."
+    ],
+    "regression": "Reduce knee travel.",
+    "progression": "Increase comfortable range gradually.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "66e484c2-fab5-5a34-8d69-24fe3f1fcc31",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO14",
+    "name": "Gentle doorway chest stretch",
+    "category": "mobility",
+    "movementPattern": "chest stretch",
+    "equipment": [
+      "Doorway"
+    ],
+    "muscles": [
+      "Pectorals",
+      "Anterior shoulder"
+    ],
+    "quality": "Comfortable chest and shoulder range",
+    "cues": [
+      "Support the forearm with the wrist relaxed.",
+      "Step through slightly without levering the shoulder."
+    ],
+    "mistakes": [
+      "Placing the arm high enough to cause pain.",
+      "Pressing hard through the wrist."
+    ],
+    "regression": "Use a lower arm position or omit if shoulder symptoms occur.",
+    "progression": "Increase comfortable hold duration rather than forcing more range.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "528b4bce-3cca-58ff-8c51-bc9c6fc10c75",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO15",
+    "name": "Side-lying open book",
+    "category": "mobility",
+    "movementPattern": "thoracic rotation",
+    "equipment": [
+      "Mat"
+    ],
+    "muscles": [
+      "Thoracic region",
+      "Chest"
+    ],
+    "quality": "Relaxed trunk rotation",
+    "cues": [
+      "Keep knees stacked and rotate the upper arm and chest gently.",
+      "Breathe out into the comfortable range."
+    ],
+    "mistakes": [
+      "Pulling the lower back into a forced twist.",
+      "Forcing the hand to the floor."
+    ],
+    "regression": "Use a smaller turn or a pillow support.",
+    "progression": "Increase comfortable range with slow breathing.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "b731566e-21da-5f59-bdf8-97d433c74552",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "MO16",
+    "name": "Clinician-prescribed wrist rehabilitation check-in",
+    "category": "mobility",
+    "movementPattern": "rehabilitation record",
+    "equipment": [
+      "Only equipment prescribed by clinician"
+    ],
+    "muscles": [
+      "Wrist and forearm"
+    ],
+    "quality": "Adherence and symptom recording",
+    "cues": [
+      "Perform only the exercises and dose actually prescribed for you.",
+      "Record pain, grip changes and next-day response in the notes."
+    ],
+    "mistakes": [
+      "Using a generic automatic progression as treatment for ECU symptoms.",
+      "Assuming a brace makes any load safe."
+    ],
+    "regression": "Record symptoms without loaded exercise when no individual programme is available.",
+    "progression": "Change load only according to the treating clinician plan; the dashboard does not prescribe ECU rehabilitation.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "80572f5b-aded-569b-9ee0-e13e405d24cf",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "IC01",
+    "name": "Ice hockey practice or game",
+    "category": "sport",
+    "movementPattern": "skating and hockey skills",
+    "equipment": [
+      "Ice rink",
+      "Full appropriate hockey equipment"
+    ],
+    "muscles": [
+      "Whole body"
+    ],
+    "quality": "Hockey-specific skill, speed and conditioning",
+    "cues": [
+      "Log actual duration and session effort after skating.",
+      "Note game status and wrist response."
+    ],
+    "mistakes": [
+      "Counting a scheduled session as completed automatically.",
+      "Adding extra conditioning without considering actual practice intensity."
+    ],
+    "regression": "Discuss modified participation with the coach or clinician where appropriate.",
+    "progression": "Progress through coaching and actual game demands; the app records rather than dictates team practice.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "4a575537-5893-5fa4-a1fc-eaebb234ef03",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "IC02",
+    "name": "Roller hockey practice",
+    "category": "sport",
+    "movementPattern": "roller skating and hockey skills",
+    "equipment": [
+      "Roller rink",
+      "Appropriate protective equipment"
+    ],
+    "muscles": [
+      "Whole body"
+    ],
+    "quality": "Hockey skills and additional skating exposure",
+    "cues": [
+      "Log actual duration and effort.",
+      "Include wrist loading even when the skating feels easy."
+    ],
+    "mistakes": [
+      "Ignoring roller practice in weekly load totals.",
+      "Assuming roller and ice mechanics are identical."
+    ],
+    "regression": "Use lighter participation if appropriate and agreed with the coach.",
+    "progression": "Follow the session content and record actual demand.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "2c80f809-ba00-5ece-a281-fb894a571c54",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS01",
+    "name": "Standing broad-jump test",
+    "category": "test",
+    "movementPattern": "horizontal jump",
+    "equipment": [
+      "Tape measure",
+      "Flat dry surface"
+    ],
+    "muscles": [
+      "Lower body"
+    ],
+    "quality": "Repeatable horizontal-jump reference",
+    "cues": [
+      "Use the same take-off line and landing measurement rule.",
+      "Record three attempts after a consistent warm-up."
+    ],
+    "mistakes": [
+      "Measuring to the front foot instead of the nearest landing mark.",
+      "Comparing different surfaces."
+    ],
+    "regression": "Use familiarisation attempts only.",
+    "progression": "Retest under the identical protocol after the planned block.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "45c9a24e-5b25-5c65-b348-6506aadfcafd",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS02",
+    "name": "10 m sprint test",
+    "category": "test",
+    "movementPattern": "linear acceleration",
+    "equipment": [
+      "Measured straight",
+      "Timing system or high-frame-rate video"
+    ],
+    "muscles": [
+      "Lower body"
+    ],
+    "quality": "Repeatable short acceleration reference",
+    "cues": [
+      "Use the same start position and timing trigger.",
+      "Allow full recovery between attempts."
+    ],
+    "mistakes": [
+      "Comparing hand timing with electronic timing.",
+      "Stopping immediately at the finish."
+    ],
+    "regression": "Use controlled familiarisation runs.",
+    "progression": "Retest with the same setup, footwear and timing method.",
+    "environment": "OUTDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "f1902772-b08d-5078-9f76-90a0781da9b4",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS03",
+    "name": "20 m sprint test",
+    "category": "test",
+    "movementPattern": "linear acceleration",
+    "equipment": [
+      "Measured straight",
+      "Timing system or high-frame-rate video"
+    ],
+    "muscles": [
+      "Lower body"
+    ],
+    "quality": "Acceleration reference over 20 m",
+    "cues": [
+      "Accelerate through the line with clear runoff space.",
+      "Keep start and timing procedures consistent."
+    ],
+    "mistakes": [
+      "Changing the starting distance from the first gate.",
+      "Testing on a slippery surface."
+    ],
+    "regression": "Use the 10 m reference if a safe 20 m course is unavailable.",
+    "progression": "Retest under matched conditions.",
+    "environment": "OUTDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "436fb5f9-7ae8-54f5-ab47-cf9f165e4c6e",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS04",
+    "name": "5-10-5 change-of-direction test",
+    "category": "test",
+    "movementPattern": "change of direction",
+    "equipment": [
+      "Measured lines",
+      "Timer"
+    ],
+    "muscles": [
+      "Lower body"
+    ],
+    "quality": "Planned change-of-direction reference",
+    "cues": [
+      "Use the documented line distances and touch rules.",
+      "Record the initial direction for each attempt."
+    ],
+    "mistakes": [
+      "Treating 5-10-5 metres as identical to 5-10-5 yards.",
+      "Reaching painfully with the left wrist."
+    ],
+    "regression": "Use submaximal technique practice or omit painful touch requirements and label the modified test.",
+    "progression": "Repeat the same protocol and compare each direction consistently.",
+    "environment": "OUTDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "b28ffe5c-ef6e-54b6-8b67-0301b360ec56",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS05",
+    "name": "30-15 intermittent fitness test",
+    "category": "test",
+    "movementPattern": "intermittent endurance",
+    "equipment": [
+      "Measured 40 m course",
+      "Official 30-15 IFT audio",
+      "Suitable footwear"
+    ],
+    "muscles": [
+      "Cardiorespiratory system",
+      "Lower body"
+    ],
+    "quality": "Standardised intermittent running fitness",
+    "cues": [
+      "Use the correct official audio and course layout.",
+      "Record the final completed speed and exact test version."
+    ],
+    "mistakes": [
+      "Inventing a cadence instead of using the protocol.",
+      "Converting the result into a laboratory VO2max measurement."
+    ],
+    "regression": "Use the submaximal cycle reference when a maximal running test is inappropriate.",
+    "progression": "Retest using identical audio, surface and rules.",
+    "environment": "OUTDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "c3501306-3c0d-5c06-8696-b48471aab17c",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS06",
+    "name": "Submaximal strength reference",
+    "category": "test",
+    "movementPattern": "strength reference",
+    "equipment": [
+      "Chosen familiar lift and equipment"
+    ],
+    "muscles": [
+      "Muscles of selected movement"
+    ],
+    "quality": "Repeatable estimated strength trend",
+    "cues": [
+      "Use a familiar lift and a technically controlled submaximal set.",
+      "Record load, repetitions and RPE with the exercise variant."
+    ],
+    "mistakes": [
+      "Using a painful or unfamiliar maximum attempt.",
+      "Treating an estimated 1RM as a measured maximum."
+    ],
+    "regression": "Use a lighter calibration set.",
+    "progression": "Compare future sets on the same exercise, machine settings and range.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "Use the selected lift convention. Keep lift variant, equipment and range identical; an estimated 1RM is only an estimate.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "d0e8896d-b6c0-51ea-b8a0-80c589fb0dcb",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS07",
+    "name": "Handling control and accuracy test",
+    "category": "test",
+    "movementPattern": "puck control",
+    "equipment": [
+      "Stick",
+      "Same puck or ball",
+      "Marked lane",
+      "Timer"
+    ],
+    "muscles": [
+      "Hands",
+      "Visual attention"
+    ],
+    "quality": "Repeatable handling reference",
+    "cues": [
+      "Use the same object, surface and test duration.",
+      "Record clean contacts, errors and cue accuracy separately."
+    ],
+    "mistakes": [
+      "Changing lane width between tests.",
+      "Testing through worsening wrist symptoms."
+    ],
+    "regression": "Use a shorter controlled test and label it as modified.",
+    "progression": "Retest the same version after the planned block.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "ae468b27-d61d-5e8c-9898-48319f09b28a",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS08",
+    "name": "Shooting accuracy test",
+    "category": "test",
+    "movementPattern": "shooting",
+    "equipment": [
+      "Regular puck",
+      "Stick",
+      "Pad or ice",
+      "Target zones",
+      "Safe backstop"
+    ],
+    "muscles": [
+      "Whole body"
+    ],
+    "quality": "Intended-target accuracy reference",
+    "cues": [
+      "Choose the intended target before every shot.",
+      "Count every attempt and keep distance, targets and shot type fixed."
+    ],
+    "mistakes": [
+      "Excluding misses from the denominator.",
+      "Recording indoor dry rehearsals as actual shots."
+    ],
+    "regression": "Postpone until safe shooting space and wrist tolerance are available.",
+    "progression": "Retest the identical setup; log speed separately if measured.",
+    "environment": "OUTDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "f38971a0-3007-5413-98d2-4e5d7f53b326",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS09",
+    "name": "Countermovement vertical-jump test",
+    "category": "test",
+    "movementPattern": "vertical jump",
+    "equipment": [
+      "Consistent measurement device",
+      "Flat dry surface"
+    ],
+    "muscles": [
+      "Lower body"
+    ],
+    "quality": "Vertical-jump reference",
+    "cues": [
+      "Use the same arm rule and measurement device.",
+      "Record three valid attempts with recovery."
+    ],
+    "mistakes": [
+      "Comparing arm-swing and hands-on-hips results.",
+      "Treating wall reach and force-plate estimates as interchangeable."
+    ],
+    "regression": "Use familiarisation jumps without maximal effort.",
+    "progression": "Retest with the same technique and equipment.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "61daf304-8b67-5995-a78f-8b6cec6173c7",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS10",
+    "name": "Single-leg lateral hop-and-stick test",
+    "category": "test",
+    "movementPattern": "lateral jump",
+    "equipment": [
+      "Tape measure",
+      "Flat dry surface"
+    ],
+    "muscles": [
+      "Lower body"
+    ],
+    "quality": "Controlled lateral-hop reference by side",
+    "cues": [
+      "Use the same take-off and landing measurement rule.",
+      "Hold a stable landing before accepting a trial."
+    ],
+    "mistakes": [
+      "Accepting a landing with an extra hop.",
+      "Treating a side difference as a diagnosis."
+    ],
+    "regression": "Use shorter familiarisation hops.",
+    "progression": "Retest both sides under identical conditions.",
+    "environment": "EITHER",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "7d8785dd-9208-5edf-a4c9-b6be82395b20",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS11",
+    "name": "Strict pull-up test",
+    "category": "test",
+    "movementPattern": "vertical pull",
+    "equipment": [
+      "Pull-up bar with comfortable grip"
+    ],
+    "muscles": [
+      "Upper back",
+      "Latissimus dorsi",
+      "Biceps"
+    ],
+    "quality": "Strict pulling repetition reference",
+    "cues": [
+      "Use the same grip and full comfortable movement standard.",
+      "Stop at technical failure or earlier if grip or wrist symptoms occur."
+    ],
+    "mistakes": [
+      "Adding kipping repetitions.",
+      "Using pain tolerance as part of the score."
+    ],
+    "regression": "Use a standardised pulldown reference instead.",
+    "progression": "Repeat only when comfortable gripping is established.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "f34e7f40-01db-5377-b85f-afeb31b13b02",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS12",
+    "name": "Grip dynamometer test: clinician clearance",
+    "category": "test",
+    "movementPattern": "grip reference",
+    "equipment": [
+      "Grip dynamometer"
+    ],
+    "muscles": [
+      "Forearm and hand"
+    ],
+    "quality": "Optional grip reference after clinical review",
+    "cues": [
+      "Leave this test locked while maximal gripping is symptomatic.",
+      "If cleared, use identical handle setting and body position."
+    ],
+    "mistakes": [
+      "Performing maximal grip tests despite temporary grip loss.",
+      "Treating results as proof the ECU tendon is healthy."
+    ],
+    "regression": "Use a symptom and function check without maximal squeezing.",
+    "progression": "Retest only under the agreed clinician guidance.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": true,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  },
+  {
+    "id": "50896d87-d40e-50d1-a93e-ebb80f759666",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS13",
+    "name": "Submaximal cycle reference",
+    "category": "test",
+    "movementPattern": "aerobic reference",
+    "equipment": [
+      "Same exercise bike",
+      "Optional heart-rate monitor"
+    ],
+    "muscles": [
+      "Cardiorespiratory system",
+      "Lower body"
+    ],
+    "quality": "Repeatable submaximal effort response",
+    "cues": [
+      "Use the documented fixed duration and machine setting.",
+      "Record effort, output and heart rate if actually measured."
+    ],
+    "mistakes": [
+      "Comparing watts from unrelated bikes.",
+      "Calling this a laboratory VO2max test."
+    ],
+    "regression": "Use a shorter easy ride as familiarisation.",
+    "progression": "Repeat the same workload to compare effort or heart-rate response.",
+    "environment": "INDOOR",
+    "videoUrl": "",
+    "wristSensitive": false,
+    "loadConvention": "No externally loaded strength target. Record the prescribed time, repetitions, distance or skill metric.",
+    "loadMultiplier": 1
+  }
+]

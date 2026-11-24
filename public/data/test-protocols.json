@@ -1,0 +1,770 @@
+[
+  {
+    "id": "b25a22dc-5c1b-5fd9-87fe-7bac73523390",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS01",
+    "exerciseId": "2c80f809-ba00-5ece-a281-fb894a571c54",
+    "name": "Standing broad jump",
+    "unit": "cm",
+    "better": "higher",
+    "protocol": [
+      "Warm up for 5 minutes with easy cycling or jogging, then 8 squats, 5 reverse lunges per side and 2 submaximal practice jumps.",
+      "Place both toes behind a measured line, using the same foot width each time. Arm swing is allowed.",
+      "Jump forward from two feet and land on two feet. Hold the landing for 2 seconds without falling or stepping back.",
+      "Measure from the take-off line to the nearest heel. Record centimetres.",
+      "Complete 3 valid attempts with 90 seconds rest between attempts. Keep all values and use the best valid distance."
+    ],
+    "frequency": "Baseline after familiarisation; programme test weeks 1, 10, 18, 26, 34, 42 and 50. Use recovered conditions.",
+    "precautions": [
+      "Use the same surface, shoes, equipment and measurement method at each assessment.",
+      "Record sleep, soreness, recent training and any symptoms. Testing replaces a workout; it is not an extra maximal session.",
+      "Postpone a maximal test if unwell, injured or unable to perform the movement normally.",
+      "A fall, backwards step or one-foot landing invalidates that attempt.",
+      "Do not compare jump tests performed with different arm rules or measurement conventions."
+    ],
+    "benchmarks": [
+      {
+        "label": "Your repeatable personal baseline",
+        "value": null,
+        "min": null,
+        "max": null,
+        "unit": "cm",
+        "protocolMatch": "personal-only",
+        "sourceUrl": null,
+        "note": "Set from your first valid familiarised measurement. No validated universal recreational, amateur, junior or professional cutoff is assigned."
+      },
+      {
+        "label": "2026 NHL Combine published top-25 range",
+        "value": null,
+        "min": 273.812,
+        "max": 299.72,
+        "unit": "cm",
+        "protocolMatch": false,
+        "sourceUrl": "https://media.nhl.com/site/vasset/public/attachments/2026/06/19913/FitnessResults_060626___FINAL.pdf",
+        "note": "Selected draft prospects, not all prospects or professional-player norms. Converted from 107.8 to 118.0 inches. Compare only with equivalent standing two-foot broad-jump technique; these are not selection cutoffs."
+      }
+    ],
+    "protocolVersion": 1,
+    "sourceUrls": [
+      "https://media.nhl.com/site/vasset/public/attachments/2026/06/19913/FitnessResults_060626___FINAL.pdf"
+    ],
+    "measurementFields": [
+      "distanceCm",
+      "attempt",
+      "valid"
+    ],
+    "category": "power"
+  },
+  {
+    "id": "f95f2469-7b85-5006-9938-23f3507c78eb",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS02",
+    "exerciseId": "45c9a24e-5b25-5c65-b348-6506aadfcafd",
+    "name": "10 m acceleration",
+    "unit": "s",
+    "better": "lower",
+    "protocol": [
+      "Use a dry, flat track with a clear run-off area. Mark 0 m and 10 m accurately.",
+      "After a dynamic warm-up, complete 3 progressive 20 m runs at approximately 60%, 75% and 90% effort, with 60 seconds rest.",
+      "Use a standing start with the front toe behind 0 m. Start from stillness without rocking or a run-up.",
+      "For fixed video timing, time from the first visible movement until the torso crosses 10 m. Record the frame rate and timing definition. With timing gates, record the exact start offset and gate configuration as a separate protocol.",
+      "Run 3 maximal trials, resting 3 minutes between trials. Keep the best valid time and the timing method."
+    ],
+    "frequency": "Baseline after familiarisation; programme test weeks 1, 10, 18, 26, 34, 42 and 50. Use recovered conditions.",
+    "precautions": [
+      "Use the same surface, shoes, equipment and measurement method at each assessment.",
+      "Record sleep, soreness, recent training and any symptoms. Testing replaces a workout; it is not an extra maximal session.",
+      "Postpone a maximal test if unwell, injured or unable to perform the movement normally.",
+      "Never compare stopwatch, first-movement video, cable timing or gate timing as if identical.",
+      "Do not run maximally on a wet, slippery or icy track. Use the planned indoor alternative."
+    ],
+    "benchmarks": [
+      {
+        "label": "Your repeatable personal baseline",
+        "value": null,
+        "min": null,
+        "max": null,
+        "unit": "s",
+        "protocolMatch": "personal-only",
+        "sourceUrl": null,
+        "note": "Set from your first valid familiarised measurement. No validated universal recreational, amateur, junior or professional cutoff is assigned."
+      },
+      {
+        "label": "2026 NHL Combine published top-25 cable timing",
+        "value": null,
+        "min": 1.97,
+        "max": 2.13,
+        "unit": "s",
+        "protocolMatch": false,
+        "sourceUrl": "https://media.nhl.com/site/vasset/public/attachments/2026/06/19913/FitnessResults_060626___FINAL.pdf",
+        "note": "Instrumented 2026 Combine protocol. Not comparable to ordinary stopwatch or gate timing and not a full-sample range."
+      },
+      {
+        "label": "One SHL team, 19 tested players: mean 1.99 s",
+        "value": 1.99,
+        "min": null,
+        "max": null,
+        "unit": "s",
+        "protocolMatch": false,
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13543659/",
+        "note": "SD 0.08 s. Cable-based 1080 Sprint, 1 kg resistance, automatic start at 0.2 m/s, artificial grass. Compare only if the full measurement method matches."
+      }
+    ],
+    "protocolVersion": 1,
+    "sourceUrls": [
+      "https://media.nhl.com/site/vasset/public/attachments/2026/06/19913/FitnessResults_060626___FINAL.pdf",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13543659/"
+    ],
+    "measurementFields": [
+      "timeSec",
+      "timingMethod",
+      "surface",
+      "startRule"
+    ],
+    "category": "speed"
+  },
+  {
+    "id": "ed25c343-c995-5ec8-a602-c2c9877a60a0",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS03",
+    "exerciseId": "f1902772-b08d-5078-9f76-90a0781da9b4",
+    "name": "20 m acceleration",
+    "unit": "s",
+    "better": "lower",
+    "protocol": [
+      "Mark 0 m, 10 m and 20 m on a dry, flat track with a clear run-off area.",
+      "Complete the sprint warm-up used for TS02 and use the same standing start.",
+      "Time from first visible movement to the torso crossing 20 m if using video. Store timing method, frame rate, surface and start rule.",
+      "Complete 3 trials with 3 minutes rest. A combined 20 m trial can provide both 10 m and 20 m splits without adding extra sprints.",
+      "Record all valid results and retain the best 20 m time. Do not mix timing systems in a trend."
+    ],
+    "frequency": "Baseline after familiarisation; programme test weeks 1, 10, 18, 26, 34, 42 and 50. Use recovered conditions.",
+    "precautions": [
+      "Use the same surface, shoes, equipment and measurement method at each assessment.",
+      "Record sleep, soreness, recent training and any symptoms. Testing replaces a workout; it is not an extra maximal session.",
+      "Postpone a maximal test if unwell, injured or unable to perform the movement normally.",
+      "Extra sprint volume is not required just to collect another split.",
+      "Avoid maximal sprint testing after an exhausting lower-body or conditioning session."
+    ],
+    "benchmarks": [
+      {
+        "label": "Your repeatable personal baseline",
+        "value": null,
+        "min": null,
+        "max": null,
+        "unit": "s",
+        "protocolMatch": "personal-only",
+        "sourceUrl": null,
+        "note": "Set from your first valid familiarised measurement. No validated universal recreational, amateur, junior or professional cutoff is assigned."
+      },
+      {
+        "label": "One SHL team, 19 tested players: mean 3.27 s",
+        "value": 3.27,
+        "min": null,
+        "max": null,
+        "unit": "s",
+        "protocolMatch": false,
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13543659/",
+        "note": "SD 0.11 s. 1080 Sprint cable, 1 kg resistance, movement threshold 0.2 m/s on artificial grass. This does not match ordinary phone or gate timing."
+      }
+    ],
+    "protocolVersion": 1,
+    "sourceUrls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13543659/"
+    ],
+    "measurementFields": [
+      "timeSec",
+      "split10Sec",
+      "timingMethod",
+      "surface",
+      "startRule"
+    ],
+    "category": "speed"
+  },
+  {
+    "id": "1f44262e-93ea-594e-9a0b-689fb50c7b17",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS04",
+    "exerciseId": "436fb5f9-7ae8-54f5-ab47-cf9f165e4c6e",
+    "name": "Pro agility 5-10-5 yard course in metric units",
+    "unit": "s",
+    "better": "lower",
+    "protocol": [
+      "Place three parallel lines with the outer lines 4.572 m to either side of the centre line. The full width is 9.144 m.",
+      "Practise the sequence at half speed once in each direction. Start straddling the centre line in the same documented stance each time.",
+      "Run 4.572 m to the first line and touch it with the hand, turn and run 9.144 m to the opposite line and touch it, then turn and run 4.572 m through the centre.",
+      "For video timing, start at first movement and stop as the torso crosses the centre line on the final return.",
+      "Complete 2 valid trials starting left and 2 starting right, resting 3 minutes between trials. Record the best time in each direction."
+    ],
+    "frequency": "Baseline after familiarisation; programme test weeks 1, 10, 18, 26, 34, 42 and 50. Use recovered conditions.",
+    "precautions": [
+      "Use the same surface, shoes, equipment and measurement method at each assessment.",
+      "Record sleep, soreness, recent training and any symptoms. Testing replaces a workout; it is not an extra maximal session.",
+      "Postpone a maximal test if unwell, injured or unable to perform the movement normally.",
+      "A 5-10-5 metre course is longer and cannot use the same benchmarks.",
+      "This is a planned change-of-direction test, not a measurement of reaction or game decision making.",
+      "If hand touches aggravate the wrist, postpone or use a clearly labelled no-hand variant that has its own baseline."
+    ],
+    "benchmarks": [
+      {
+        "label": "Your repeatable personal baseline",
+        "value": null,
+        "min": null,
+        "max": null,
+        "unit": "s",
+        "protocolMatch": "personal-only",
+        "sourceUrl": null,
+        "note": "Set from your first valid familiarised measurement. No validated universal recreational, amateur, junior or professional cutoff is assigned."
+      },
+      {
+        "label": "NCAA Division III men, 15 players: mean 4.79 s",
+        "value": 4.79,
+        "min": null,
+        "max": null,
+        "unit": "s",
+        "protocolMatch": false,
+        "sourceUrl": "https://www.jssm.org/jssm-14-522.xml-Fulltext",
+        "note": "SD 0.19 s. Hand timed, lead-foot finish, average of 2 trials. Not directly comparable to this video/best-trial protocol."
+      },
+      {
+        "label": "2026 NHL Combine published top-25 left-start range",
+        "value": null,
+        "min": 4.2,
+        "max": 4.4,
+        "unit": "s",
+        "protocolMatch": false,
+        "sourceUrl": "https://media.nhl.com/site/vasset/public/attachments/2026/06/19913/FitnessResults_060626___FINAL.pdf",
+        "note": "Selected prospects. Rounded published times; direction and timing method must match. No population percentile implied."
+      }
+    ],
+    "protocolVersion": 1,
+    "sourceUrls": [
+      "https://www.jssm.org/jssm-14-522.xml-Fulltext",
+      "https://media.nhl.com/site/vasset/public/attachments/2026/06/19913/FitnessResults_060626___FINAL.pdf"
+    ],
+    "measurementFields": [
+      "timeSec",
+      "direction",
+      "timingMethod",
+      "stance",
+      "handTouch"
+    ],
+    "category": "speed"
+  },
+  {
+    "id": "a71a335d-3994-55e6-84db-26262515176c",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS05",
+    "exerciseId": "b28ffe5c-ef6e-54b6-8b67-0301b360ec56",
+    "name": "Original 40 m 30-15 Intermittent Fitness Test",
+    "unit": "km/h",
+    "better": "higher",
+    "protocol": [
+      "Use the original 40 m official 30-15 IFT audio. Mark lines at 0 m, 20 m and 40 m with the official 3 m tolerance zones and space beyond each end.",
+      "Complete a light dynamic warm-up and practise following the audio before the assessment.",
+      "Run for 30 seconds and recover for 15 seconds. The original first stage is 8 km/h, increasing by 0.5 km/h every stage.",
+      "During each 15-second recovery, walk forward to the next marked line as directed by the audio. Do not walk backwards to a closer line.",
+      "Stop at voluntary exhaustion or when unable to reach the end-zone tolerance on three consecutive occasions.",
+      "Record the speed of the last fully completed stage as VIFT. Complete only one maximal test that day."
+    ],
+    "frequency": "Baseline after familiarisation; programme test weeks 1, 10, 18, 26, 34, 42 and 50. Use recovered conditions.",
+    "precautions": [
+      "Use the same surface, shoes, equipment and measurement method at each assessment.",
+      "Record sleep, soreness, recent training and any symptoms. Testing replaces a workout; it is not an extra maximal session.",
+      "Postpone a maximal test if unwell, injured or unable to perform the movement normally.",
+      "Use the official audio matching the selected distance. Running, skating, 28 m and continuous track versions are different protocols.",
+      "VIFT is not a laboratory measurement of VO2max.",
+      "This maximal test replaces the conditioning workout and is optional if symptom or recovery status is unsuitable."
+    ],
+    "benchmarks": [
+      {
+        "label": "Your repeatable personal baseline",
+        "value": null,
+        "min": null,
+        "max": null,
+        "unit": "km/h",
+        "protocolMatch": "personal-only",
+        "sourceUrl": null,
+        "note": "Set from your first valid familiarised measurement. No validated universal recreational, amateur, junior or professional cutoff is assigned."
+      }
+    ],
+    "protocolVersion": 1,
+    "sourceUrls": [
+      "https://www.30-15ift.com/pdf/protocolENG.pdf"
+    ],
+    "measurementFields": [
+      "viftKmh",
+      "completedStage",
+      "testVersion"
+    ],
+    "category": "conditioning"
+  },
+  {
+    "id": "d731e1a1-a9d9-5772-a2c3-348bc48f7db0",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS06",
+    "exerciseId": "c3501306-3c0d-5c06-8696-b48471aab17c",
+    "name": "Submaximal strength reference",
+    "unit": "kg",
+    "better": "higher",
+    "protocol": [
+      "Choose the usual wrist-tolerated main lift. Record its exact variant, equipment, depth or handle height and any straps.",
+      "Complete the session warm-up, then 3 gradual practice sets of 5, 3 and 2 repetitions at easy effort, resting 60, 90 and 120 seconds respectively.",
+      "Perform one technically consistent reference set of 3 to 6 repetitions at RPE 7 to 8, leaving approximately 2 to 3 repetitions in reserve. Rest 3 minutes before the set.",
+      "Record load, completed repetitions, RPE, technique and symptoms. Stop if form changes or pain appears.",
+      "For tracking only, calculate Epley estimate = load in kg x (1 + repetitions / 30). Save the actual set as the primary observation."
+    ],
+    "frequency": "Baseline after familiarisation; programme test weeks 1, 10, 18, 26, 34, 42 and 50. Use recovered conditions.",
+    "precautions": [
+      "Use the same surface, shoes, equipment and measurement method at each assessment.",
+      "Record sleep, soreness, recent training and any symptoms. Testing replaces a workout; it is not an extra maximal session.",
+      "Postpone a maximal test if unwell, injured or unable to perform the movement normally.",
+      "An estimate from a set stopped with repetitions in reserve is not a measured one-repetition maximum.",
+      "Only compare the same lift variant and technique. A trap-bar high-handle result is different from a low-handle result.",
+      "Do not force gripping or bar placement that aggravates the ECU tendon."
+    ],
+    "benchmarks": [
+      {
+        "label": "Your repeatable personal baseline",
+        "value": null,
+        "min": null,
+        "max": null,
+        "unit": "kg",
+        "protocolMatch": "personal-only",
+        "sourceUrl": null,
+        "note": "Set from your first valid familiarised measurement. No validated universal recreational, amateur, junior or professional cutoff is assigned."
+      }
+    ],
+    "protocolVersion": 1,
+    "sourceUrls": [],
+    "measurementFields": [
+      "loadKg",
+      "reps",
+      "rpe",
+      "exerciseCode",
+      "variant",
+      "estimated1RmKg"
+    ],
+    "formula": "loadKg * (1 + reps / 30)",
+    "category": "strength"
+  },
+  {
+    "id": "1fffb23b-bdf6-5cdd-850b-9b8a9e7f3f7b",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS07",
+    "exerciseId": "d0e8896d-b6c0-51ea-b8a0-80c589fb0dcb",
+    "name": "Controlled stickhandling quality reference",
+    "unit": "touches/30s",
+    "better": "higher",
+    "protocol": [
+      "Use the same stick, Green Biscuit or ball, floor surface and two markers 30 cm apart each time.",
+      "Complete 60 seconds of comfortable easy handling, then rest 60 seconds.",
+      "Perform narrow forehand-backhand handling for 30 seconds at a controllable pace. A touch means one deliberate blade contact moving the object across the marked space.",
+      "Record total touches, errors and valid controlled touches. Count an error when the object escapes the space or control is lost.",
+      "After 60 seconds rest, repeat once. Keep both trials and compare controlled touches together with error count, wrist response and eyes-up percentage."
+    ],
+    "frequency": "Baseline after familiarisation; programme test weeks 1, 10, 18, 26, 34, 42 and 50. Use recovered conditions.",
+    "precautions": [
+      "Use the same surface, shoes, equipment and measurement method at each assessment.",
+      "Record sleep, soreness, recent training and any symptoms. Testing replaces a workout; it is not an extra maximal session.",
+      "Postpone a maximal test if unwell, injured or unable to perform the movement normally.",
+      "This is a personal skill measure with no validated recreational-to-professional cutoff.",
+      "Stop when wrist pain rises, grip changes or control requires compensation. Do not test through an ECU flare.",
+      "Do not increase speed simply to raise the touch count while errors or symptoms worsen.",
+      "Eyes-up percentage requires video sampling or an observer and should be marked estimated if self-rated."
+    ],
+    "benchmarks": [
+      {
+        "label": "Your repeatable personal baseline",
+        "value": null,
+        "min": null,
+        "max": null,
+        "unit": "touches/30s",
+        "protocolMatch": "personal-only",
+        "sourceUrl": null,
+        "note": "Set from your first valid familiarised measurement. No validated universal recreational, amateur, junior or professional cutoff is assigned."
+      }
+    ],
+    "protocolVersion": 1,
+    "sourceUrls": [],
+    "measurementFields": [
+      "touches",
+      "errors",
+      "controlledTouches",
+      "eyesUpPercent",
+      "painBefore",
+      "painAfter",
+      "nextMorningPain"
+    ],
+    "category": "skill"
+  },
+  {
+    "id": "39a7b0bf-2426-5b1d-83ed-6242a0f0d223",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS08",
+    "exerciseId": "ae468b27-d61d-5e8c-9898-48319f09b28a",
+    "name": "Shooting target accuracy reference",
+    "unit": "%",
+    "better": "higher",
+    "protocol": [
+      "Use the same safe shooting setup, puck, pad, stick, shot type and measured distance. Default reference distance is 3 m where safe space permits.",
+      "Set five fixed target areas: top left, top right, bottom left, bottom right and five-hole. Record each target size and position before the first test.",
+      "After 5 comfortable non-counted practice shots and 60 seconds rest, take 5 shots at each target, for 25 counted attempts total.",
+      "Rest 15 seconds between shots and 60 seconds between target groups. Use one shot type for each test.",
+      "Record attempts and hits by zone. Accuracy = total hits / total attempts x 100. Keep speed and release time separate if measured."
+    ],
+    "frequency": "Baseline after familiarisation; programme test weeks 1, 10, 18, 26, 34, 42 and 50. Use recovered conditions.",
+    "precautions": [
+      "Use the same surface, shoes, equipment and measurement method at each assessment.",
+      "Record sleep, soreness, recent training and any symptoms. Testing replaces a workout; it is not an extra maximal session.",
+      "Postpone a maximal test if unwell, injured or unable to perform the movement normally.",
+      "Outdoor spring or summer only unless an appropriate safe indoor shooting area exists.",
+      "Dry release footwork and video drills do not count as shots or accuracy attempts.",
+      "Stop if the wrist becomes sore or gripping deteriorates. A shorter symptom-limited sample must store its actual attempt count.",
+      "No universal accuracy band exists without the same distance, target dimensions and shot type."
+    ],
+    "benchmarks": [
+      {
+        "label": "Your repeatable personal baseline",
+        "value": null,
+        "min": null,
+        "max": null,
+        "unit": "%",
+        "protocolMatch": "personal-only",
+        "sourceUrl": null,
+        "note": "Set from your first valid familiarised measurement. No validated universal recreational, amateur, junior or professional cutoff is assigned."
+      }
+    ],
+    "protocolVersion": 1,
+    "sourceUrls": [],
+    "measurementFields": [
+      "shotType",
+      "distanceM",
+      "targetSizeCm",
+      "shots",
+      "topLeft",
+      "topRight",
+      "bottomLeft",
+      "bottomRight",
+      "fiveHole",
+      "accuracyPercent",
+      "shotSpeedKmh",
+      "releaseTimeSec"
+    ],
+    "formula": "100 * totalHits / actualShots",
+    "category": "skill"
+  },
+  {
+    "id": "c77d3bb0-13cc-5c4d-924a-b7cc4f8f6a0e",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS09",
+    "exerciseId": "f38971a0-3007-5413-98d2-4e5d7f53b326",
+    "name": "Hands-on-hips countermovement jump",
+    "unit": "cm",
+    "better": "higher",
+    "protocol": [
+      "After the shared dynamic warm-up, perform 2 submaximal practice jumps.",
+      "Stand still for 2 seconds with the same foot width and both hands on hips. Use a comfortable countermovement depth and jump straight up.",
+      "Keep the same measurement device and method. Force-plate, flight-time and jump-and-reach measurements are separate protocols.",
+      "If using slow-motion video, record frame rate and take-off/landing frames. Flight-time estimate in metres = 9.81 x flight time squared / 8.",
+      "Complete 3 maximal valid trials with 60 seconds rest. Record all results and the best height."
+    ],
+    "frequency": "Baseline after familiarisation; programme test weeks 1, 10, 18, 26, 34, 42 and 50. Use recovered conditions.",
+    "precautions": [
+      "Use the same surface, shoes, equipment and measurement method at each assessment.",
+      "Record sleep, soreness, recent training and any symptoms. Testing replaces a workout; it is not an extra maximal session.",
+      "Postpone a maximal test if unwell, injured or unable to perform the movement normally.",
+      "Do not tuck the knees or change landing posture to exaggerate video flight time.",
+      "Arm-swing and hands-on-hips results are different tests.",
+      "Stop for painful landing or altered movement."
+    ],
+    "benchmarks": [
+      {
+        "label": "Your repeatable personal baseline",
+        "value": null,
+        "min": null,
+        "max": null,
+        "unit": "cm",
+        "protocolMatch": "personal-only",
+        "sourceUrl": null,
+        "note": "Set from your first valid familiarised measurement. No validated universal recreational, amateur, junior or professional cutoff is assigned."
+      },
+      {
+        "label": "One SHL team, 21 tested players: mean 41.8 cm",
+        "value": 41.8,
+        "min": null,
+        "max": null,
+        "unit": "cm",
+        "protocolMatch": false,
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13543659/",
+        "note": "SD 4.8 cm. Hands-on-hips force-plate countermovement jump calculated by impulse-momentum. Phone flight-time results require separate interpretation."
+      },
+      {
+        "label": "2026 NHL Combine top-25 no-arm range",
+        "value": null,
+        "min": 45.212,
+        "max": 53.086,
+        "unit": "cm",
+        "protocolMatch": false,
+        "sourceUrl": "https://media.nhl.com/site/vasset/public/attachments/2026/06/19913/FitnessResults_060626___FINAL.pdf",
+        "note": "Selected draft prospects on force plates. Converted from 17.8 to 20.9 inches; not a full population norm."
+      }
+    ],
+    "protocolVersion": 1,
+    "sourceUrls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13543659/",
+      "https://media.nhl.com/site/vasset/public/attachments/2026/06/19913/FitnessResults_060626___FINAL.pdf"
+    ],
+    "measurementFields": [
+      "heightCm",
+      "measurementMethod",
+      "frameRate",
+      "flightTimeSec"
+    ],
+    "category": "power"
+  },
+  {
+    "id": "607a0c86-fa5c-58f6-b636-c0c0e04bf1ad",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS10",
+    "exerciseId": "61daf304-8b67-5995-a78f-8b6cec6173c7",
+    "name": "Single-leg lateral hop and stick",
+    "unit": "cm",
+    "better": "higher",
+    "protocol": [
+      "Mark the centre of the starting heel on a dry, stable surface. Keep hands on hips.",
+      "Stand on the right leg, hop laterally to the right, and land on the right leg. For the left leg, mirror the task to the left.",
+      "Hold each landing for 2 seconds with the free foot off the floor and without hopping again.",
+      "Measure lateral displacement from the starting heel centre to the landing heel centre.",
+      "Complete 3 valid trials per side, alternating legs, resting 60 seconds between attempts. Record the best distance for each side."
+    ],
+    "frequency": "Baseline after familiarisation; programme test weeks 1, 10, 18, 26, 34, 42 and 50. Use recovered conditions.",
+    "precautions": [
+      "Use the same surface, shoes, equipment and measurement method at each assessment.",
+      "Record sleep, soreness, recent training and any symptoms. Testing replaces a workout; it is not an extra maximal session.",
+      "Postpone a maximal test if unwell, injured or unable to perform the movement normally.",
+      "Falling, touching down with the free foot or an extra hop invalidates that attempt.",
+      "Compare the same hop direction and arm rules.",
+      "Side difference is a tracking signal, not a diagnosis or a validated injury-risk cutoff."
+    ],
+    "benchmarks": [
+      {
+        "label": "Your repeatable personal baseline",
+        "value": null,
+        "min": null,
+        "max": null,
+        "unit": "cm",
+        "protocolMatch": "personal-only",
+        "sourceUrl": null,
+        "note": "Set from your first valid familiarised measurement. No validated universal recreational, amateur, junior or professional cutoff is assigned."
+      }
+    ],
+    "protocolVersion": 1,
+    "sourceUrls": [],
+    "measurementFields": [
+      "leftCm",
+      "rightCm",
+      "asymmetryPercent",
+      "valid"
+    ],
+    "formula": "100 * abs(leftCm - rightCm) / max(leftCm, rightCm)",
+    "category": "power"
+  },
+  {
+    "id": "d43b33fa-c293-59f0-8def-a7f4d7b4434b",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS11",
+    "exerciseId": "7d8785dd-9208-5edf-a4c9-b6be82395b20",
+    "name": "Strict pull-up reference, wrist gated",
+    "unit": "reps",
+    "better": "higher",
+    "protocol": [
+      "Only assess when the wrist can tolerate the movement and any clinician restrictions allow it.",
+      "Use the same pronated shoulder-width grip. If a neutral grip is needed, create a separate neutral-grip baseline.",
+      "Warm up with 2 easy sets of 3 assisted repetitions, resting 2 minutes. Rest 3 minutes before testing.",
+      "Perform one set from full elbow extension to chin above the bar, returning under control. Do not kip or swing.",
+      "Stop at technique failure or any painful grip and record only valid completed repetitions."
+    ],
+    "frequency": "Baseline after familiarisation; programme test weeks 1, 10, 18, 26, 34, 42 and 50. Use recovered conditions.",
+    "precautions": [
+      "Use the same surface, shoes, equipment and measurement method at each assessment.",
+      "Record sleep, soreness, recent training and any symptoms. Testing replaces a workout; it is not an extra maximal session.",
+      "Postpone a maximal test if unwell, injured or unable to perform the movement normally.",
+      "Not scheduled as a routine maximal test during active ECU symptoms.",
+      "A brace does not establish capacity for maximal pulling.",
+      "Do not compare assisted, weighted, pronated and neutral-grip performances directly."
+    ],
+    "benchmarks": [
+      {
+        "label": "Your repeatable personal baseline",
+        "value": null,
+        "min": null,
+        "max": null,
+        "unit": "reps",
+        "protocolMatch": "personal-only",
+        "sourceUrl": null,
+        "note": "Set from your first valid familiarised measurement. No validated universal recreational, amateur, junior or professional cutoff is assigned."
+      },
+      {
+        "label": "Major-junior men, 21 players: mean 15.1 reps",
+        "value": 15.1,
+        "min": null,
+        "max": null,
+        "unit": "reps",
+        "protocolMatch": false,
+        "sourceUrl": "https://jhk.termedia.pl/pdf-158715-84976?filename=Functional-Performance-Te.pdf",
+        "note": "SD 3.4 reps; mean age 18.9 years. Pronated shoulder-width grip, full extension and chin above bar. A population description, not a requirement."
+      },
+      {
+        "label": "2026 NHL Combine published top-25 range",
+        "value": null,
+        "min": 12,
+        "max": 18,
+        "unit": "reps",
+        "protocolMatch": false,
+        "sourceUrl": "https://media.nhl.com/site/vasset/public/attachments/2026/06/19913/FitnessResults_060626___FINAL.pdf",
+        "note": "Selected prospects only. Technique and counting standard must match."
+      }
+    ],
+    "protocolVersion": 1,
+    "sourceUrls": [
+      "https://jhk.termedia.pl/pdf-158715-84976?filename=Functional-Performance-Te.pdf",
+      "https://media.nhl.com/site/vasset/public/attachments/2026/06/19913/FitnessResults_060626___FINAL.pdf"
+    ],
+    "measurementFields": [
+      "reps",
+      "grip",
+      "assistanceKg",
+      "addedLoadKg",
+      "pain"
+    ],
+    "requiresClinicianClearance": true,
+    "defaultEnabled": false,
+    "category": "strength"
+  },
+  {
+    "id": "cf8aad10-da17-5a22-9f39-17b665a9bda5",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS12",
+    "exerciseId": "f34e7f40-01db-5377-b85f-afeb31b13b02",
+    "name": "Grip dynamometry, clinician cleared only",
+    "unit": "kgf",
+    "better": "higher",
+    "protocol": [
+      "Obtain clinician approval for maximal grip testing if ECU symptoms persist. Do not use this test during a flare.",
+      "Use the same calibrated dynamometer and record the handle setting.",
+      "For this personal protocol, sit with the shoulder by the side, elbow at 90 degrees and wrist in a comfortable neutral position.",
+      "Perform a 3-second squeeze, then relax. Alternate hands for 3 attempts per side, resting 60 seconds between attempts.",
+      "Record all values and the best kg-force for each hand. Stop if pain or a change in grip occurs."
+    ],
+    "frequency": "Baseline after familiarisation; programme test weeks 1, 10, 18, 26, 34, 42 and 50. Use recovered conditions.",
+    "precautions": [
+      "Use the same surface, shoes, equipment and measurement method at each assessment.",
+      "Record sleep, soreness, recent training and any symptoms. Testing replaces a workout; it is not an extra maximal session.",
+      "Postpone a maximal test if unwell, injured or unable to perform the movement normally.",
+      "This seated protocol differs from the NHL extended-arm protocol and has no matching NHL benchmark in this app.",
+      "Maximal grip testing is not ECU rehabilitation.",
+      "Do not infer recovery solely from matching the other hand or from a brace reducing symptoms."
+    ],
+    "benchmarks": [
+      {
+        "label": "Your repeatable personal baseline",
+        "value": null,
+        "min": null,
+        "max": null,
+        "unit": "kgf",
+        "protocolMatch": "personal-only",
+        "sourceUrl": null,
+        "note": "Set from your first valid familiarised measurement. No validated universal recreational, amateur, junior or professional cutoff is assigned."
+      }
+    ],
+    "protocolVersion": 1,
+    "sourceUrls": [],
+    "measurementFields": [
+      "leftKgf",
+      "rightKgf",
+      "handleSetting",
+      "device",
+      "pain"
+    ],
+    "requiresClinicianClearance": true,
+    "defaultEnabled": false,
+    "category": "strength"
+  },
+  {
+    "id": "242a4898-22d0-567c-b6e3-cdd70d087c00",
+    "createdAt": "2026-11-24T00:00:00.000Z",
+    "updatedAt": "2026-11-24T00:00:00.000Z",
+    "deleted": false,
+    "code": "TS13",
+    "exerciseId": "50896d87-d40e-50d1-a93e-ebb80f759666",
+    "name": "Fixed-load submaximal cycle reference",
+    "unit": "bpm",
+    "better": "lower",
+    "protocol": [
+      "During a familiarisation session, select a fixed wattage and cadence that produces RPE 3 to 4 during a 6-minute ride. Save bike model, seat setting, resistance, wattage and cadence.",
+      "On each assessment, warm up for 5 minutes at easy effort.",
+      "Ride for 6 minutes at the exact familiarisation wattage and cadence on the same bike.",
+      "Record mean heart rate during the final 60 seconds, final RPE and heart rate 60 seconds after stopping in the same recovery posture.",
+      "If no heart-rate monitor is available, record wattage, cadence and RPE with heart rate left blank. Do not fabricate a score."
+    ],
+    "frequency": "Baseline after familiarisation; programme test weeks 1, 10, 18, 26, 34, 42 and 50. Use recovered conditions.",
+    "precautions": [
+      "Use the same surface, shoes, equipment and measurement method at each assessment.",
+      "Record sleep, soreness, recent training and any symptoms. Testing replaces a workout; it is not an extra maximal session.",
+      "Postpone a maximal test if unwell, injured or unable to perform the movement normally.",
+      "A lower heart rate alone does not prove improvement. Interpret alongside the same workload, RPE, symptoms and recovery context.",
+      "This is a personal monitoring protocol and cannot calculate laboratory VO2max.",
+      "Different bike consoles and resistance settings are not interchangeable.",
+      "Avoid loading the symptomatic wrist on moving Assault Bike handles; use a comfortable stationary-bike setup."
+    ],
+    "benchmarks": [
+      {
+        "label": "Your repeatable personal baseline",
+        "value": null,
+        "min": null,
+        "max": null,
+        "unit": "bpm",
+        "protocolMatch": "personal-only",
+        "sourceUrl": null,
+        "note": "Set from your first valid familiarised measurement. No validated universal recreational, amateur, junior or professional cutoff is assigned."
+      }
+    ],
+    "protocolVersion": 1,
+    "sourceUrls": [],
+    "measurementFields": [
+      "meanFinalMinuteHr",
+      "recovery60SecHr",
+      "watts",
+      "cadence",
+      "bikeModel",
+      "seatSetting",
+      "rpe"
+    ],
+    "category": "conditioning"
+  }
+]

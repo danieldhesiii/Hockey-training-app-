@@ -1,0 +1,56 @@
+# Verification record
+
+Checked on 24 November 2026.
+
+## Repository import verification
+
+Imported from `shift-hockey-source.zip` into `danieldhesiii/Hockey-training-app-` on 24 November 2026, using `dev`. The destination repository had no branches or commits. No `main` branch was created or pushed.
+
+All application code, programme data, tests, scripts and deployment configuration match the supplied archive byte-for-byte. Only repository/workflow documentation and this verification record were updated. The programme was not regenerated.
+
+Verified locally with Node 24.16.0 and npm 11.13.0:
+
+- `npm ci --ignore-scripts --no-audit --no-fund`: passed, no dependencies.
+- `npm run check`: passed, including 52 weeks, 622 sessions and 2,252 exercise prescriptions.
+- `npm test`: 61 passed, zero failures.
+- `npm run build`: passed, 22 local assets, cache version `ddd7cc450a0925`.
+- `npm run dev`: started at `http://localhost:5173`; `/` and all 22 production assets returned HTTP 200 and matched the built files byte-for-byte.
+
+The browser observations below are inherited from the supplied source's verification record; they were not repeated during this import. Remote push verification is reported separately after execution. No live cloud service or production deployment was changed during the import.
+
+## Automated checks
+
+`npm run check` passes the Node version, complete programme schema/references, local PWA assets and JavaScript syntax.
+
+`npm test` passes **61 tests**:
+
+- 28 coaching and date tests cover missing data, progression gates, incomplete/duplicate sets, repeated misses, template/variant isolation, deloads, readiness, workload comparison, finite Epley estimates and UK daylight-saving boundaries.
+- 15 programme tests cover 52 weeks, every reference, holiday exclusions, no Monday gym, weekly slot structure, full session budgets, exact targets, foot contacts, replacement tests, deload spacing and indoor shooting swaps.
+- 6 equipment tests cover throw and loaded-jump units, stationary runner settings, exclusion from kilogram progression, explicit target swaps and ballistic holds on reduced/taper days.
+- 2 interval tests cover all rounds, distinct between-block recovery and no added final rest.
+- 10 storage/transport tests cover full seed validation, JSON/CSV round trips, invalid data rejection, deterministic LWW, simulated paginated cloud transport and the SQL security contract.
+
+The storage tests also verify preservation of logged, edited, started, skipped and deleted session families during baseline refresh, including reordered or removed prescription IDs.
+
+The transport harness checks a 501-record pull, an edit made while a push is in flight, retention after a network failure, a successful retry, and account/project isolation. These are simulated server tests.
+
+## Browser observations
+
+- The app loads the full programme and reports Offline ready.
+- Desktop dashboard layout was visually inspected.
+- The responsive layout was visually inspected at a 412-pixel content width, including phone navigation and primary controls.
+- A deliberately labelled QA set was saved in native IndexedDB and remained after a page reload.
+- An app asset update appeared through the service-worker update prompt and loaded the new Progress controls.
+- With the preview server stopped, the cached app reopened, the exercise library searched successfully, complete exercise instructions opened, and another QA set saved locally.
+- Temporary set entries were soft-deleted after the checks. They are not present in any shipped seed or deliverable.
+- The equipment update loaded through the service-worker update prompt. A labelled medicine-ball QA entry saved as three throws per side with a 2 kg ball, without landing contacts; it was then removed.
+- The resisted-runner alternative displayed its own four five-second bouts, full recovery and required setup confirmation. A labelled QA entry saved as five seconds at setting 8, unit level and RPE 6. It was then removed and the original acceleration block restored.
+- The trap-bar jump form displayed jump count, total bar-plus-plates mass, optional height and two foot contacts per bilateral landing. The updated workout layout was visually inspected.
+
+## Not claimed as verified
+
+No physical Samsung or Mac installation was performed. The phone-width browser check is not a test of device-specific audio, vibration, keyboard or operating-system background behavior.
+
+No Supabase project was provisioned or modified. The SQL has been inspected and contract-tested, but actual execution, configured RLS isolation, email delivery and phone-to-Mac sync must be verified after the user connects a dedicated project. The setup guide gives those smoke checks.
+
+The optional external forecast and personal video links require internet access. A stopped preview server checks local app dependence, not every possible network or browser-storage failure. The final app source is dependency-free and its build precaches all 22 generated app assets.
