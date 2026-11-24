@@ -20,3 +20,5 @@ dialog{width:min(720px,calc(100% - 32px));max-height:90dvh;overflow-y:auto;color
 @media print{.sidebar,.topbar,.bottom-nav,#timer-dock,.btn,.icon-btn,.filters{display:none!important}.app-shell{padding:0}.main{padding:0}body{background:white;color:black}.panel,.metric,.session-card{break-inside:avoid;background:white;border-color:#aaa;color:black}.muted,small,p{color:#333!important}.dashboard-grid,.grid-2{display:block}}
 
 .rotate-left{transform:rotate(180deg)}
+
+#swap-custom[hidden]{display:none}

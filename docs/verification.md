@@ -54,3 +54,9 @@ No physical Samsung or Mac installation was performed. The phone-width browser c
 No Supabase project was provisioned or modified. The SQL has been inspected and contract-tested, but actual execution, configured RLS isolation, email delivery and phone-to-Mac sync must be verified after the user connects a dedicated project. The setup guide gives those smoke checks.
 
 The optional external forecast and personal video links require internet access. A stopped preview server checks local app dependence, not every possible network or browser-storage failure. The final app source is dependency-free and its build precaches all 22 generated app assets.
+
+## Exercise alternative picker update, 24 November 2026
+
+The picker now searches the training exercise library, starts with the current category and lists similar movements first. All six core replacements for dead bug are available. Replacement targets come from that exercise's own baseline prescription where available; otherwise targets must be entered. Sets, reps/time, sides, rest and effort can be edited. Machine and power units remain distinct, equipment setup confirmation and symptom checks remain active, and saved entries block an exercise swap. Obsolete test and swap metadata is explicitly cleared for merged storage writes.
+
+Validation: `npm run check`, all 67 automated tests and `npm run build` passed. Browser checks on localhost verified the six core choices, search for reverse crunch, saving a temporary alternative, persistence after reload and restoring the original dead bug targets. No training results were entered. All programme JSON and the readable 52-week programme are unchanged. These checks do not claim a production deployment or live cloud sync.
