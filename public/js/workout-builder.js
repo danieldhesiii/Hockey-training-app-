@@ -27,7 +27,7 @@ export function makeExercise(values, id, existing=null) {
   return {...existing, id, custom:true, customType:values.type, code:existing?.code || 'CU'+id.replaceAll('-','').slice(0,8).toUpperCase(),
     name:text(values.name,120), category:type.category, defaultMetric:type.metric, loggingMode:type.loggingMode || null,
     powerMetric:type.powerMetric || null, equipmentConfirmationRequired:!!type.loggingMode,
-    equipmentNotes:text(values.setup,1000), environment:['INDOOR','OUTDOOR','EITHER'].includes(values.environment)?values.environment:'EITHER',
+    equipmentNotes:text(values.setup,1000), environment:['INDOOR','OUTDOOR','EITHER'].includes(values.environment)?values.environment:existing?.environment||'EITHER',
     equipment:text(values.equipment,500).split(',').map(s=>s.trim()).filter(Boolean),
     muscles:text(values.muscles,500).split(',').map(s=>s.trim()).filter(Boolean),
     quality:text(values.quality,200) || 'Personal exercise', movementPattern:text(values.pattern,120) || type.category,
@@ -59,21 +59,20 @@ export function workoutRecords(values, blocks, weeks, id, existing=null) {
   if (!text(values.title,150)) throw new Error('Name your workout.');
   if (!blocks.length) throw new Error('Add at least one exercise.');
   if (!/^\d{4}-\d{2}-\d{2}$/.test(values.date) || !weeks.some(w=>values.date>=w.startDate&&values.date<=w.endDate)) throw new Error('Choose a date within your training year.');
-  if (existing && !existing.customWorkout) throw new Error('Copy this programme session to make your own workout.');
-  const kind=['strength','conditioning','skills','mobility'].includes(values.kind)?values.kind:'strength';
+  const kind=['strength','conditioning','skills','mobility','testing'].includes(values.kind)?values.kind:'strength';
   const weekday=new Date(values.date+'T12:00:00Z').getUTCDay();
-  if (kind==='strength' && weekday===1) throw new Error('Monday is your no-gym day. Choose another date or workout type.');
+  if (['strength','testing'].includes(kind) && weekday===1) throw new Error('Monday is your no-gym day. Choose another date or workout type.');
   const max=weekday===4?20:60;
   if (!Number.isFinite(values.durationMin)||values.durationMin<5||values.durationMin>max) throw new Error(`Keep this workout between 5 and ${max} minutes, including preparation and cool-down.`);
   if (!Number.isFinite(values.intensityRpe)||values.intensityRpe<1||values.intensityRpe>10) throw new Error('Choose an effort from 1 to 10.');
-  const plannedWork=blocks.reduce((total,block)=>total+(Number.isFinite(block.estimatedBlockMin)?block.estimatedBlockMin:estimateBlock(block.targetSets)),0);
+  const plannedWork=blocks.filter(block=>!block.skipped).reduce((total,block)=>total+(Number.isFinite(block.estimatedBlockMin)?block.estimatedBlockMin:estimateBlock(block.targetSets)),0);
   const prep=[...(existing?.warmup||values.warmup||[]),...(existing?.cooldown||values.cooldown||[])];
   const prepMinutes=prep.length?prep.reduce((total,item)=>total+(item.seconds||0)/60,0):5;
   if(plannedWork+prepMinutes>values.durationMin) throw new Error(`Exercise blocks need about ${Math.ceil(plannedWork)} minutes. Allow ${prepMinutes} more for preparation and cool-down, or reduce the targets.`);
   const week=weeks.find(w=>values.date>=w.startDate&&values.date<=w.endDate);
-  const session={...existing,id,customWorkout:true,extra:true,optional:true,templateId:existing?.templateId||values.workoutTemplateId||'custom-'+id,
+  const session={...existing,id,customWorkout:existing?.customWorkout??!existing,personalised:true,extra:existing?!!existing.extra:true,optional:existing?!!existing.optional:true,templateId:existing?.templateId||values.workoutTemplateId||'custom-'+id,
     title:text(values.title,150),date:values.date,weekId:week.id,phaseId:week.phaseId,kind,
-    durationMin:values.durationMin,intensityRpe:values.intensityRpe,environment:'EITHER',
+    durationMin:values.durationMin,intensityRpe:values.intensityRpe,environment:existing?.environment||'EITHER',
     status:existing?.status||'planned',warmup:existing?.warmup||structuredClone(values.warmup||[]),cooldown:existing?.cooldown||structuredClone(values.cooldown||[]),notes:text(values.notes,4000)};
   return {session, prescriptions:blocks.map((block,index)=>({...structuredClone(block),sessionId:id,order:index+1}))};
 }

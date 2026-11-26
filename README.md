@@ -20,6 +20,8 @@ Use **Library → Create exercise** to add a movement with its own equipment, cu
 
 Custom records are saved locally and included in backups and the existing optional sync outbox. The shipped 52-week programme stays intact.
 
+The workout controls include a visible exercise picker, direct editing of programme workouts, skip/restore, safe replacement after logging, undo for removed entries and a searchable **History** view. Custom strength exercises appear in Progress. Input and builder drafts survive tab reloads. See the [usability audit](docs/usability-audit.md) for tested workflows and the limits of verification.
+
 ## Run locally
 
 Use Node 22 or newer. There are no runtime or development package dependencies.

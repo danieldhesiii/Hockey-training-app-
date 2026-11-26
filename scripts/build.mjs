@@ -10,6 +10,8 @@ async function files(dir,relative='') { let out=[]; for(const d of await readdir
 const all=(await files(path.join(root,'dist'))).filter(f=>f!=='sw.js').sort();
 const hash=createHash('sha256');for(const f of all)hash.update(await readFile(path.join(root,'dist',f)));
 const version=hash.digest('hex').slice(0,14);
+const index=await readFile(path.join(root,'dist/index.html'),'utf8');
+await writeFile(path.join(root,'dist/index.html'),index.replace('__APP_VERSION__',version));
 let sw=await readFile(path.join(root,'public/sw.js'),'utf8');
 sw=sw.replace('__BUILD_VERSION__',version).replace('__PRECACHE_FILES__',JSON.stringify(['./',...all.map(f=>'./'+f)]));
 await writeFile(path.join(root,'dist/sw.js'),sw);

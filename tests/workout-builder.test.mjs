@@ -65,7 +65,9 @@ test('workout validation preserves Monday, Thursday and total time constraints',
   const exercise=makeExercise(values,randomUUID()),block=makeBlock(exercise,targets,randomUUID());
   for(const invalid of [{date:'2026-11-30'},{date:'2026-11-26',durationMin:30},{durationMin:61},{durationMin:5},{date:'2028-01-01'},{title:''},{intensityRpe:0}])assert.throws(()=>workoutRecords({...workout,...invalid},[block],seed.weeks,randomUUID()));
   assert.throws(()=>workoutRecords(workout,[],seed.weeks,randomUUID()));
-  assert.throws(()=>workoutRecords(workout,[block],seed.weeks,randomUUID(),seed.sessions[0]));
+  const baseline={...seed.sessions[0],date:workout.date,kind:'strength',optional:false};
+  const edited=workoutRecords(workout,[block],seed.weeks,baseline.id,baseline);
+  assert.equal(edited.session.id,baseline.id);assert.equal(edited.session.optional,false);assert.equal(edited.session.extra,false);assert.equal(edited.session.customWorkout,false);
 });
 
 test('logged and soft-deleted history blocks exercise removal or target edits',()=>{

@@ -1,7 +1,7 @@
 import {esc,fmt} from './utils.js';
 import {powerMetric} from './equipment.js';
 
-const saved = (logs, describe) => !logs.length ? '' : `<details class="mt-16"><summary>Saved entries</summary>${logs.map(l=>`<div class="row-between mb-16"><span class="small muted">${esc(describe(l))}</span><button class="link-btn" data-action="remove-log" data-table="set_logs" data-id="${l.id}">Remove</button></div>`).join('')}</details>`;
+const saved = (logs, describe) => !logs.length ? '' : `<details class="mt-16"><summary>Saved entries</summary>${logs.map(l=>`<div class="row-between mb-16"><span class="small muted">${esc(describe(l))}</span><span class="row"><button class="link-btn" data-action="edit-entry" data-table="set_logs" data-id="${l.id}">Edit</button><button class="link-btn" data-action="remove-log" data-table="set_logs" data-id="${l.id}">Remove</button></span></div>`).join('')}</details>`;
 const number = (name,label,{value='',placeholder='',min=0,max=1000,step=1,required=false}={}) => `<label>${label}<input name="${name}" type="number" inputmode="decimal" min="${min}" max="${max}" step="${step}" ${required?'required':''} value="${esc(String(value))}" placeholder="${esc(String(placeholder))}"></label>`;
 
 export function renderPowerBlock(sx,exercise,blocked,logs) {

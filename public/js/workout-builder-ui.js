@@ -1,5 +1,7 @@
 import * as db from './db.js';
 import {esc,uid,number,today} from './utils.js';
+import {exercisePicker} from './exercise-picker-ui.js';
+import {applyAlternative} from './alternatives.js';
 import {targetText} from './coaching.js';
 import {exerciseTypes,makeExercise,makeBlock,workoutRecords,blockHasHistory,copyBlocks,targetMetrics,validateWorkoutEdit} from './workout-builder.js';
 
@@ -50,10 +52,14 @@ export async function workoutBuilder(ctx,{session=null,copy=null,date=today()}={
   const source=session||copy;
   const originals=source?ctx.data.session_exercises.filter(row=>row.sessionId===source.id).sort((a,b)=>a.order-b.order):[];
   let blocks=session?structuredClone(originals):copy?copyBlocks(originals,uid):[];
-  let draft={workoutTemplateId:source?.customWorkout?source.templateId:null,title:copy?copy.title+' (copy)':session?.title||'',date:session?.date||date,kind:source&&['strength','conditioning','skills','mobility'].includes(source.kind)?source.kind:'strength',durationMin:source?.durationMin||(new Date(date+'T12:00:00Z').getUTCDay()===4?20:45),intensityRpe:source?.intensityRpe||6,notes:source?.notes||'',warmup:structuredClone(source?.warmup||[]),cooldown:structuredClone(source?.cooldown||[])};
+  let draft={workoutTemplateId:source?.customWorkout?source.templateId:null,title:copy?copy.title+' (copy)':session?.title||'',date:session?.date||date,kind:source&&['strength','conditioning','skills','mobility','testing'].includes(source.kind)?source.kind:'strength',durationMin:source?.durationMin||(new Date(date+'T12:00:00Z').getUTCDay()===4?20:45),intensityRpe:source?.intensityRpe||6,notes:source?.notes||'',warmup:structuredClone(source?.warmup||[]),cooldown:structuredClone(source?.cooldown||[])};
+  const draftKey='shift-workout-draft:'+(session?.id||copy?.id||'new');
+  let restored=false;
+  try{const saved=JSON.parse(sessionStorage.getItem(draftKey)||'null');if(saved&&saved.version===(session?.changeId||null)){draft=saved.draft;blocks=saved.blocks;restored=true;}}catch{}
+  const storeDraft=()=>{try{sessionStorage.setItem(draftKey,JSON.stringify({version:session?.changeId||null,draft,blocks}));}catch{}};
   const historical=!!session&&allLogs.some(log=>log.sessionId===session.id);
   const locked=block=>!!session&&blockHasHistory(block,allLogs);
-  const capture=()=>{const form=$('#workout-builder-form');if(!form)return;for(const key of ['title','date','kind','durationMin','intensityRpe','notes'])draft[key]=form.elements[key].value;};
+  const capture=()=>{const form=$('#workout-builder-form');if(!form)return;for(const key of ['title','date','kind','durationMin','intensityRpe','notes'])draft[key]=form.elements[key].value;storeDraft();};
   const error=message=>{$('#workout-error').textContent=message;};
 
   function targetEditor(exercise,block=null,index=null) {
@@ -72,35 +78,34 @@ export async function workoutBuilder(ctx,{session=null,copy=null,date=today()}={
     $('#builder-target-form').addEventListener('submit',event=>{
       event.preventDefault();const f=new FormData(event.target);
       try{const next=makeBlock(exercise,{metric:String(f.get('metric')),amount:number(f,'amount'),sets:number(f,'sets'),sides:number(f,'sides'),restSec:number(f,'restSec'),rpe:number(f,'rpe'),notes:f.get('notes'),variant:f.get('variant')},block?.id||uid());
-        if(index===null)blocks.push(next);else blocks[index]={...block,...next};render();
+        if(index===null)blocks.push(next);else blocks[index]=exercise.id===block.exerciseId?{...block,...next,rampUpSets:block.rampUpSets||[],preWorkRestSec:block.preWorkRestSec||0,estimatedBlockMin:Math.max(block.estimatedBlockMin||0,next.estimatedBlockMin)}:applyAlternative(block,next,exercise,next.variant,false);storeDraft();render();
       }catch(err){$('#target-error').textContent=err.message;}
     });
   }
 
   function render(){
-    ctx.modal(session?'Edit workout':'Create workout',`<form id="workout-builder-form"><div class="form-grid">
+    ctx.modal(session?'Edit workout':'Create workout',`${restored?'<p class="notice mb-16">Your unfinished workout draft was restored.</p>':''}<form id="workout-builder-form"><div class="form-grid">
       ${field('title','Workout name',draft.title,'required maxlength="150" placeholder="e.g. My core workout"')}
       ${field('date','Workout date',draft.date,`type="date" required ${historical?'readonly':''}`)}
-      <label>Workout type<select name="kind" ${historical?'disabled':''}>${[['strength','Gym / strength'],['conditioning','Conditioning'],['skills','Skills'],['mobility','Mobility']].map(([key,label])=>`<option value="${key}" ${draft.kind===key?'selected':''}>${label}</option>`).join('')}</select></label>
+      <label>Workout type<select name="kind" ${historical?'disabled':''}>${[['strength','Gym / strength'],['conditioning','Conditioning'],['skills','Skills'],['mobility','Mobility'],...(session?.kind==='testing'?[['testing','Testing']]:[])].map(([key,label])=>`<option value="${key}" ${draft.kind===key?'selected':''}>${label}</option>`).join('')}</select></label>
       ${inputNumber('durationMin','Planned minutes, including warm-up',draft.durationMin,5,60)}${inputNumber('intensityRpe','Planned effort (RPE)',draft.intensityRpe,1,10,0.5)}
       <label class="full">Workout notes / preparation / cool-down<textarea name="notes" maxlength="4000">${esc(draft.notes)}</textarea></label></div>
       <p class="small muted mt-16">Exercise blocks: approximately ${Math.ceil(blocks.reduce((total,b)=>total+(b.estimatedBlockMin||0),0))} min. Keep room for preparation and cool-down.</p><h3 class="mt-24">Exercises <span class="small muted">${blocks.length}</span></h3>
-      <div class="builder-blocks mt-16">${blocks.map((block,index)=>{const exercise=exercises.find(e=>e.id===block.exerciseId);return `<section class="builder-block"><div class="row-between"><strong>${index+1}. ${esc(exercise?.name||'Exercise')}</strong><span class="badge neutral">${block.targetSets.length} sets</span></div><p class="small muted mt-8">${esc(targetText(block.targetSets[0],exercise))}</p><div class="row wrap mt-16">${locked(block)?'<span class="small muted">Saved history: targets preserved</span>':button('Edit targets','edit',`data-index="${index}"`)+button('Remove','remove',`data-index="${index}" aria-label="Remove ${esc(exercise?.name)}"`)}${button('↑','up',`data-index="${index}" aria-label="Move ${esc(exercise?.name)} up" ${index===0?'disabled':''}`)}${button('↓','down',`data-index="${index}" aria-label="Move ${esc(exercise?.name)} down" ${index===blocks.length-1?'disabled':''}`)}</div></section>`;}).join('')||'<p class="small muted">Start by adding an exercise below.</p>'}</div>
-      <div class="builder-add mt-24"><label>Find an exercise<input name="exerciseSearch" type="search" placeholder="Search name, muscles or equipment"></label><label class="mt-16">Exercise to add<select name="exerciseId"></select></label><div class="row wrap mt-16">${button('Add selected exercise','add')}${button('Create new exercise','create')}</div></div>
-      <p class="form-help mt-16">Your workout is optional and appears on its chosen date. Monday stays free of gym workouts. Thursday workouts have a 20-minute limit; other workouts have a 60-minute limit.</p>
+      <div class="builder-blocks mt-16">${blocks.map((block,index)=>{const exercise=exercises.find(e=>e.id===block.exerciseId);return `<section class="builder-block"><div class="row-between"><strong>${index+1}. ${esc(exercise?.name||'Exercise')}</strong><span class="badge neutral">${block.targetSets.length} ${block.targetSets.length===1?'set':'sets'}</span></div><p class="small muted mt-8">${esc(targetText(block.targetSets[0],exercise))}</p><div class="row wrap mt-16">${locked(block)?'<span class="small muted">Saved history: targets preserved</span>':button('Edit targets','edit',`data-index="${index}"`)+button('Change exercise','change',`data-index="${index}"`)+button('Remove','remove',`data-index="${index}" aria-label="Remove ${esc(exercise?.name)}"`)}${button('↑','up',`data-index="${index}" aria-label="Move ${esc(exercise?.name)} up" ${index===0?'disabled':''}`)}${button('↓','down',`data-index="${index}" aria-label="Move ${esc(exercise?.name)} down" ${index===blocks.length-1?'disabled':''}`)}</div></section>`;}).join('')||'<p class="small muted">Start by adding an exercise below.</p>'}</div>
+      <div class="builder-add mt-24"><h3>Add an exercise</h3><div id="builder-picker" class="mt-16"></div></div>
+      <p class="form-help mt-16">${session?'Changes apply only to this workout. Your other programme sessions stay unchanged.':'Your workout is optional and appears on its chosen date.'} Monday stays free of gym workouts. Thursday workouts have a 20-minute limit; other workouts have a 60-minute limit.</p>
       <p id="workout-error" class="form-error mt-16" role="alert"></p><div class="form-actions"><button class="btn btn-primary">Save workout</button></div></form>`);
     const form=$('#workout-builder-form');
-    const search=()=>{const q=form.elements.exerciseSearch.value.trim().toLowerCase();const matches=exercises.filter(e=>!e.deleted&&!['test','sport'].includes(e.category)&&!['SK09','SK10'].includes(e.code)&&(!q||[e.name,e.code,...e.muscles,...e.equipment].join(' ').toLowerCase().includes(q))).sort((a,b)=>a.name.localeCompare(b.name));form.elements.exerciseId.innerHTML=matches.map(e=>`<option value="${e.id}">${esc(e.name)}${e.custom?' · Yours':''}</option>`).join('');form.querySelector('[data-builder="add"]').disabled=!matches.length;};
-    form.elements.exerciseSearch.addEventListener('input',search);search();
+    form.addEventListener('input',capture);form.addEventListener('change',capture);
+    exercisePicker($('#builder-picker'),exercises.filter(e=>!e.deleted&&!['test','sport'].includes(e.category)&&!['SK09','SK10'].includes(e.code)),{onSelect:exercise=>targetEditor(exercise),onCreate:()=>{capture();exerciseEditor(ctx,{onCancel:render,onSave:saved=>{exercises.push(saved);targetEditor(saved);}});}});
     for(const control of form.querySelectorAll('[data-builder]'))control.addEventListener('click',()=>{
       capture();const index=Number(control.dataset.index),action=control.dataset.builder;
-      if(action==='add'){const exercise=exercises.find(e=>e.id===form.elements.exerciseId.value);if(exercise)targetEditor(exercise);return;}
-      if(action==='create'){exerciseEditor(ctx,{onCancel:render,onSave:saved=>{exercises.push(saved);targetEditor(saved);}});return;}
+      if(action==='change'){if(locked(blocks[index]))return;const old=blocks[index];ctx.modal('Choose a replacement','<div id="builder-change-picker"></div>'+button('Back to workout','back'));$('#modal [data-builder="back"]').addEventListener('click',render);exercisePicker($('#builder-change-picker'),exercises.filter(e=>!e.deleted&&e.id!==old.exerciseId&&!['test','sport'].includes(e.category)&&!['SK09','SK10'].includes(e.code)),{category:exercises.find(e=>e.id===old.exerciseId)?.category,onSelect:exercise=>targetEditor(exercise,old,index),onCreate:()=>exerciseEditor(ctx,{onCancel:render,onSave:saved=>{exercises.push(saved);targetEditor(saved,old,index);}})});return;}
       if(action==='edit'){if(!locked(blocks[index]))targetEditor(exercises.find(e=>e.id===blocks[index].exerciseId),blocks[index],index);return;}
       if(action==='remove'){if(!locked(blocks[index]))blocks.splice(index,1);}
       if(action==='up'&&index>0)[blocks[index-1],blocks[index]]=[blocks[index],blocks[index-1]];
       if(action==='down'&&index<blocks.length-1)[blocks[index+1],blocks[index]]=[blocks[index],blocks[index+1]];
-      render();
+      storeDraft();render();
     });
     form.addEventListener('submit',async event=>{
       event.preventDefault();capture();const save=form.querySelector('button.btn-primary');save.disabled=true;
@@ -113,6 +118,7 @@ export async function workoutBuilder(ctx,{session=null,copy=null,date=today()}={
         const records=workoutRecords(values,blocks,ctx.data.weeks,session?.id||uid(),current);
         const removed=freshBlocks.filter(old=>!blocks.some(row=>row.id===old.id)).map(row=>({...row,deleted:true}));
         await db.saveRecords([{table:'sessions',row:records.session},...records.prescriptions.map(row=>({table:'session_exercises',row})),...removed.map(row=>({table:'session_exercises',row}))]);
+        try{sessionStorage.removeItem(draftKey);}catch{}
         ctx.closeModal();await ctx.refresh();location.hash='session/'+records.session.id;ctx.toast('Workout saved. Copy it onto another date whenever you need it.');
       }catch(err){error(err.message);save.disabled=false;}
     });

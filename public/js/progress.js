@@ -138,8 +138,7 @@ export function renderProgress(ctx){
   const wellness=alive(data.wellness_logs).filter(w=>inRange(w.date,start,anchor)).sort((a,b)=>a.date.localeCompare(b.date));
   const latestWeight=wellness.filter(w=>finite(w.bodyweightKg)).at(-1);
   const latestReadiness=wellness.filter(w=>finite(w.readinessScore)).at(-1);
-  const liftCodes=['ST01','ST02','ST03','ST04','ST05','ST07','ST09','ST10','ST11','ST12'];
-  const lifts=allExercises.filter(e=>liftCodes.includes(e.code));
+  const lifts=allExercises.filter(e=>e.category==='strength'&&!e.loggingMode).sort((a,b)=>a.name.localeCompare(b.name));
   if(!lifts.some(e=>e.id===state.lift))state.lift=lifts[0]?.id||null;
   const liftVariants=[...new Set(alive(data.set_logs).filter(r=>r.exerciseId===state.lift&&r.kind==='strength'&&sessions.get(r.sessionId)?.status==='completed').map(r=>r.variant||'standard'))].sort();
   if(!liftVariants.length)liftVariants.push('standard');
