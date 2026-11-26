@@ -22,3 +22,6 @@ dialog{width:min(720px,calc(100% - 32px));max-height:90dvh;overflow-y:auto;color
 .rotate-left{transform:rotate(180deg)}
 
 #swap-custom[hidden]{display:none}
+
+.builder-blocks{display:grid;gap:12px}.builder-block{padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}.builder-add{padding-top:20px;border-top:1px solid var(--line)}.builder-block .btn{min-height:44px}.form-error{color:#ffd1d1}.builder-block .row-between{gap:12px}.page-heading>.row{flex-shrink:0}
+@media(max-width:760px){.page-heading:has([data-action="create-exercise"]){flex-wrap:wrap}.page-heading>.row{flex-wrap:wrap}.builder-block .row{gap:8px}}

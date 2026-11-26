@@ -150,17 +150,25 @@ function prepare(row,old) {
 function enqueue(store,table,row) { store.put({id:randomId(),createdAt:row.updatedAt,updatedAt:row.updatedAt,deleted:false,changeId:row.changeId,table,recordId:row.id,record:row,attempts:0}); }
 export async function save(table,row) { return (await saveMany(table,[row]))[0]; }
 export async function saveMany(table,rows) {
-  tableName(table);if(table==='sync_queue') throw new Error('Outbox records are managed automatically.');
   if(!Array.isArray(rows)) throw new Error('Records must be an array.');
-  const db=await openDB();const tx=db.transaction([table,'sync_queue'],'readwrite');const done=completion(tx);const saved=[];
+  tableName(table);if(table==='sync_queue') throw new Error('Outbox records are managed automatically.');
+  return saveRecords(rows.map(row=>({table,row})));
+}
+// A workout and all its exercise blocks share one transaction and outbox commit.
+export async function saveRecords(records) {
+  if(!Array.isArray(records)||!records.length) return [];
+  const tables=[...new Set(records.map(({table})=>tableName(table)))];
+  if(tables.includes('sync_queue')) throw new Error('Outbox records are managed automatically.');
+  const db=await openDB();const tx=db.transaction([...tables,'sync_queue'],'readwrite');const done=completion(tx);const saved=[];
   try {
-    const store=tx.objectStore(table),queue=tx.objectStore('sync_queue');
-    for(const input of rows) {
+    const queue=tx.objectStore('sync_queue');
+    for(const {table,row:input} of records) {
+      const store=tx.objectStore(table);
       if(!plain(input)) throw new Error('Record must be an object.');
       const old=input.id?await request(store.get(input.id)):null;
       const row=prepare(input,old);validateRecord(table,row);store.put(row);enqueue(queue,table,row);saved.push(row);
     }
-    await done;emit('local',table);return saved;
+    await done;for(const table of tables)emit('local',table);return saved;
   } catch(error) {try{tx.abort();}catch{}await done.catch(()=>{});throw error;}
 }
 export async function remove(table,id) { const row=await get(table,id);if(!row) return null;return save(table,{id,deleted:true}); }

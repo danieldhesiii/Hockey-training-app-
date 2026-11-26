@@ -286,3 +286,16 @@ Export before clearing local data. **Clear this device** removes this site's loc
 Once a week, check whether the recorded schedule matched reality, whether your key lifts progressed within their effort caps, and whether the wrist or sleep trend suggests that optional work should be reduced. Compare tests only when the protocol was repeated. Read the next week's deload, test or event notes before moving sessions around.
 
 If performance is improving and the work remains manageable, continue the current progression. If progress is slow, first check consistency, measurement method, sleep, actual skate intensity and symptoms. Change one training variable after a meaningful review, rather than adding work to every day. The dashboard makes that review easier by showing what you actually did and the assumptions behind the next suggestion.
+
+
+## Your exercises and workouts
+
+In **Library**, choose **Create exercise**. Enter its name, logging type, equipment, muscles and any cues or video reference you want. Logging types include strength loads, bodyweight reps, timed holds, conditioning, skills, sprint distance, jumps, medicine-ball throws and machine settings. Exercises you create appear in the library, the workout builder and the alternative picker. Open one and choose **Edit your exercise** to update it. Its logging type and strength load convention stay fixed once used, so past records and prescribed units are preserved.
+
+Choose **Create workout** from Today, Programme or Library. Give it a name, date, planned minutes and effort. Find an exercise, select **Add selected exercise**, then enter sets, reps or time, sides, rest and effort. Use **Create new exercise** inside the builder if the movement is missing; your workout draft stays in place. Add more exercises and use the up/down controls to order them. **Edit targets** changes an unlogged block; **Remove** removes an unlogged block from the draft.
+
+**Save workout** adds an optional session to the calendar. The workout and all its blocks save together. The time estimate includes exercise blocks and room for preparation and cool-down. Monday remains a no-gym day; Thursday custom workouts stay within 20 minutes and other custom workouts within 60 minutes. The original 52-week baseline is unchanged.
+
+Open a custom workout and choose **Edit workout** to adjust it. Blocks with saved or soft-deleted history keep their targets and cannot be removed in the builder. A workout with history keeps its date and type. Finished or skipped workouts can be copied instead of edited. **Copy as new workout** creates a separate session on your chosen date, with fresh exercise-block IDs and no copied results. Copies of your own workout keep its template identity for repeated training references. Programme-session copies retain their preparation, cool-down and prescriptions.
+
+These records use the same local storage, JSON backup and optional sync outbox as the rest of SHIFT. No new account or cloud setup is needed. Preview and production addresses have separate local data, so use the production address for real training after this update is released.

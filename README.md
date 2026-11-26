@@ -14,6 +14,12 @@ The programme runs from **24 November 2026 to 21 November 2027**, using calendar
 
 Supabase is optional. There is no login wall for local training. The same site on two devices has two separate local stores until you configure sync or transfer a backup.
 
+## Create your own training
+
+Use **Library → Create exercise** to add a movement with its own equipment, cues, logging units and video reference. Choose **Create workout** from Today, Programme or Library to build a dated workout with sets, repetitions or time, rest and effort. Exercises can be created inside the workout builder, reordered and removed before logging. Custom workouts can be edited or copied onto another date. Logged blocks retain their targets, and copied workouts start without results. See [your exercises and workouts](docs/user-guide.md#your-exercises-and-workouts).
+
+Custom records are saved locally and included in backups and the existing optional sync outbox. The shipped 52-week programme stays intact.
+
 ## Run locally
 
 Use Node 22 or newer. There are no runtime or development package dependencies.
