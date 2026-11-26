@@ -1,3 +1,4 @@
+import {readDraft,writeDraft,removeDraft,bindFormDraft} from './editor-drafts.js';
 import * as db from './db.js';
 import {esc,uid,number,today} from './utils.js';
 import {exercisePicker} from './exercise-picker-ui.js';
@@ -33,6 +34,7 @@ export function exerciseEditor(ctx,{exercise=null,onSave=null,onCancel=null}={})
     <p id="exercise-error" class="form-error mt-16" role="alert"></p><div class="form-actions">${onCancel?button('Back to workout','back'):''}<button class="btn btn-primary">Save exercise</button></div></form>`);
   const form=$('#custom-exercise-form');
   if(used)form.elements.loadMultiplier.disabled=true;
+  const exerciseDraft=bindFormDraft(form,'exercise:'+(e.id||'new'));
   form.querySelector('[data-builder="back"]')?.addEventListener('click',onCancel);
   form.addEventListener('submit',async event=>{
     event.preventDefault();const submit=form.querySelector('button[type="submit"],button.btn-primary');submit.disabled=true;
@@ -40,7 +42,7 @@ export function exerciseEditor(ctx,{exercise=null,onSave=null,onCancel=null}={})
       const values=Object.fromEntries(new FormData(form));values.wristSensitive=form.elements.wristSensitive.checked;
       values.type=used?e.customType:values.type;values.loadMultiplier=used?e.loadMultiplier:Number(values.loadMultiplier);
       const row=makeExercise(values,e.id||uid(),exercise);
-      const saved=await db.save('exercises',row);await ctx.refresh({render:false});
+      const saved=await db.save('exercises',row);exerciseDraft.clear();await ctx.refresh({render:false});
       if(onSave)onSave(saved);else{ctx.closeModal();await ctx.refresh();ctx.toast('Exercise saved in your library.');}
     }catch(error){$('#exercise-error').textContent=error.message;submit.disabled=false;}
   });
@@ -54,9 +56,11 @@ export async function workoutBuilder(ctx,{session=null,copy=null,date=today()}={
   let blocks=session?structuredClone(originals):copy?copyBlocks(originals,uid):[];
   let draft={workoutTemplateId:source?.customWorkout?source.templateId:null,title:copy?copy.title+' (copy)':session?.title||'',date:session?.date||date,kind:source&&['strength','conditioning','skills','mobility','testing'].includes(source.kind)?source.kind:'strength',durationMin:source?.durationMin||(new Date(date+'T12:00:00Z').getUTCDay()===4?20:45),intensityRpe:source?.intensityRpe||6,notes:source?.notes||'',warmup:structuredClone(source?.warmup||[]),cooldown:structuredClone(source?.cooldown||[])};
   const draftKey='shift-workout-draft:'+(session?.id||copy?.id||'new');
-  let restored=false;
-  try{const saved=JSON.parse(sessionStorage.getItem(draftKey)||'null');if(saved&&saved.version===(session?.changeId||null)){draft=saved.draft;blocks=saved.blocks;restored=true;}}catch{}
-  const storeDraft=()=>{try{sessionStorage.setItem(draftKey,JSON.stringify({version:session?.changeId||null,draft,blocks}));}catch{}};
+  let restored=false,pendingTarget=null;
+  const savedDraft=readDraft(draftKey);
+  if(savedDraft?.draft&&Array.isArray(savedDraft.blocks)){draft=savedDraft.draft;blocks=savedDraft.blocks;pendingTarget=savedDraft.pendingTarget||null;restored=true;}
+  else try{const legacy=JSON.parse(sessionStorage.getItem(draftKey)||'null');if(legacy?.draft){draft=legacy.draft;blocks=legacy.blocks;restored=true;}}catch{}
+  const storeDraft=()=>{const ok=writeDraft(draftKey,{version:session?.changeId||null,draft,blocks,pendingTarget,updatedAt:new Date().toISOString()});const status=$('#workout-draft-status');if(status)status.textContent=ok?'Draft saved on this device.':'Draft could not be saved. Keep this editor open until you save.';};
   const historical=!!session&&allLogs.some(log=>log.sessionId===session.id);
   const locked=block=>!!session&&blockHasHistory(block,allLogs);
   const capture=()=>{const form=$('#workout-builder-form');if(!form)return;for(const key of ['title','date','kind','durationMin','intensityRpe','notes'])draft[key]=form.elements[key].value;storeDraft();};
@@ -74,17 +78,20 @@ export async function workoutBuilder(ctx,{session=null,copy=null,date=today()}={
       ${exercise.wristSensitive?'<p class="notice amber mt-16">Daily wrist and grip checks still apply to this exercise.</p>':''}
       <p class="form-help">These targets replace this block’s targets. Log actual load during training. Allow time for preparation, recovery and cool-down.</p>
       <p id="target-error" role="alert" class="form-error"></p><div class="form-actions">${button('Back to workout','back')}<button class="btn btn-primary">${block?'Save targets':'Add to workout'}</button></div></form>`);
+    const targetKey='targets:'+draftKey+':'+exercise.id+':'+(block?.id||'new');
+    pendingTarget={exerciseId:exercise.id,blockId:block?.id||null,index};storeDraft();
+    const targetDraft=bindFormDraft($('#builder-target-form'),targetKey,{onChange:storeDraft});
     $('#builder-target-form [data-builder="back"]').addEventListener('click',render);
     $('#builder-target-form').addEventListener('submit',event=>{
       event.preventDefault();const f=new FormData(event.target);
       try{const next=makeBlock(exercise,{metric:String(f.get('metric')),amount:number(f,'amount'),sets:number(f,'sets'),sides:number(f,'sides'),restSec:number(f,'restSec'),rpe:number(f,'rpe'),notes:f.get('notes'),variant:f.get('variant')},block?.id||uid());
-        if(index===null)blocks.push(next);else blocks[index]=exercise.id===block.exerciseId?{...block,...next,rampUpSets:block.rampUpSets||[],preWorkRestSec:block.preWorkRestSec||0,estimatedBlockMin:Math.max(block.estimatedBlockMin||0,next.estimatedBlockMin)}:applyAlternative(block,next,exercise,next.variant,false);storeDraft();render();
+        if(index===null)blocks.push(next);else blocks[index]=exercise.id===block.exerciseId?{...block,...next,rampUpSets:block.rampUpSets||[],preWorkRestSec:block.preWorkRestSec||0,estimatedBlockMin:Math.max(block.estimatedBlockMin||0,next.estimatedBlockMin)}:applyAlternative(block,next,exercise,next.variant,false);targetDraft.clear();pendingTarget=null;storeDraft();render();
       }catch(err){$('#target-error').textContent=err.message;}
     });
   }
 
   function render(){
-    ctx.modal(session?'Edit workout':'Create workout',`${restored?'<p class="notice mb-16">Your unfinished workout draft was restored.</p>':''}<form id="workout-builder-form"><div class="form-grid">
+    ctx.modal(session?'Edit workout':'Create workout',`${restored?'<p class="notice mb-16">Your unfinished workout draft was restored.</p>':''}<p id="workout-draft-status" class="small muted mb-16" role="status">Draft saves automatically on this device.</p>${pendingTarget?button('Resume unfinished exercise targets','resume')+button('Discard unfinished targets','discard-target'):''}<form id="workout-builder-form"><div class="form-grid">
       ${field('title','Workout name',draft.title,'required maxlength="150" placeholder="e.g. My core workout"')}
       ${field('date','Workout date',draft.date,`type="date" required ${historical?'readonly':''}`)}
       <label>Workout type<select name="kind" ${historical?'disabled':''}>${[['strength','Gym / strength'],['conditioning','Conditioning'],['skills','Skills'],['mobility','Mobility'],...(session?.kind==='testing'?[['testing','Testing']]:[])].map(([key,label])=>`<option value="${key}" ${draft.kind===key?'selected':''}>${label}</option>`).join('')}</select></label>
@@ -95,6 +102,8 @@ export async function workoutBuilder(ctx,{session=null,copy=null,date=today()}={
       <div class="builder-add mt-24"><h3>Add an exercise</h3><div id="builder-picker" class="mt-16"></div></div>
       <p class="form-help mt-16">${session?'Changes apply only to this workout. Your other programme sessions stay unchanged.':'Your workout is optional and appears on its chosen date.'} Monday stays free of gym workouts. Thursday workouts have a 20-minute limit; other workouts have a 60-minute limit.</p>
       <p id="workout-error" class="form-error mt-16" role="alert"></p><div class="form-actions"><button class="btn btn-primary">Save workout</button></div></form>`);
+    $('#modal [data-builder="resume"]')?.addEventListener('click',()=>{const exercise=exercises.find(e=>e.id===pendingTarget.exerciseId),block=blocks.find(b=>b.id===pendingTarget.blockId);if(exercise)targetEditor(exercise,block||null,block?blocks.indexOf(block):null);});
+    $('#modal [data-builder="discard-target"]')?.addEventListener('click',()=>{removeDraft('targets:'+draftKey+':'+pendingTarget.exerciseId+':'+(pendingTarget.blockId||'new'));pendingTarget=null;storeDraft();render();});
     const form=$('#workout-builder-form');
     form.addEventListener('input',capture);form.addEventListener('change',capture);
     exercisePicker($('#builder-picker'),exercises.filter(e=>!e.deleted&&!['test','sport'].includes(e.category)&&!['SK09','SK10'].includes(e.code)),{onSelect:exercise=>targetEditor(exercise),onCreate:()=>{capture();exerciseEditor(ctx,{onCancel:render,onSave:saved=>{exercises.push(saved);targetEditor(saved);}});}});
@@ -110,6 +119,7 @@ export async function workoutBuilder(ctx,{session=null,copy=null,date=today()}={
     form.addEventListener('submit',async event=>{
       event.preventDefault();capture();const save=form.querySelector('button.btn-primary');save.disabled=true;
       try {
+        if(pendingTarget)throw new Error('Resume and add your unfinished exercise targets, or discard them before saving the workout.');
         const values={...draft,durationMin:Number(draft.durationMin),intensityRpe:Number(draft.intensityRpe)};
         const current=session?await db.get('sessions',session.id):null;
         const freshLogs=(await Promise.all(['set_logs','skill_logs','test_results'].map(table=>db.all(table,{includeDeleted:true})))).flat();
@@ -118,7 +128,7 @@ export async function workoutBuilder(ctx,{session=null,copy=null,date=today()}={
         const records=workoutRecords(values,blocks,ctx.data.weeks,session?.id||uid(),current);
         const removed=freshBlocks.filter(old=>!blocks.some(row=>row.id===old.id)).map(row=>({...row,deleted:true}));
         await db.saveRecords([{table:'sessions',row:records.session},...records.prescriptions.map(row=>({table:'session_exercises',row})),...removed.map(row=>({table:'session_exercises',row}))]);
-        try{sessionStorage.removeItem(draftKey);}catch{}
+        removeDraft(draftKey);try{sessionStorage.removeItem(draftKey);}catch{}
         ctx.closeModal();await ctx.refresh();location.hash='session/'+records.session.id;ctx.toast('Workout saved. Copy it onto another date whenever you need it.');
       }catch(err){error(err.message);save.disabled=false;}
     });

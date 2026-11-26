@@ -75,3 +75,8 @@ Chrome extension tests used a separate local preview on port 5174. Verified exer
 See [the usability audit](usability-audit.md) for findings, implemented changes, browser evidence and verification boundaries. The update replaces hidden exercise choices with visible rows; enables editing programme workouts and safe replacement after recording sets; adds skip/restore, session and exercise history, recorded-entry editing and Undo; preserves tab input and builder drafts; includes custom lifts in Progress; and adds a persistent app-update banner and build identifier. All 84 tests, source checks and the production build pass. Programme and seed files are unchanged. Live cloud services were not changed or verified.
 
 The update lifecycle now ignores the initial offline-install controller change, reloads once for an explicitly accepted update, and reloads an already-active update instead of messaging an obsolete worker. Three lifecycle regression tests cover these cases. Programme edits preserve required status even when the baseline session has no explicit extra-session flag.
+
+
+## Persistent editor drafts
+
+Exercise fields, workout structure and unfinished target forms now use device-local draft storage instead of relying on tab-only workout drafts. Draft recovery does not create training records. Success clears only the corresponding draft; storage failures are surfaced. Chrome extension checks on an isolated port 5178 verified exercise name and multiline notes after closing/reopening the whole tab, workout name after reload, and pending target amount recovery using Resume unfinished exercise targets. No production records were changed. All 87 automated tests, source checks and production build pass.

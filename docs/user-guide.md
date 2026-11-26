@@ -307,8 +307,15 @@ Every planned workout has **Edit workout**, **Change exercise** and **Skip exerc
 
 **Skip exercise** keeps its prescriptions and recorded work and offers **Restore exercise**. A workout summary shows blocks with recorded entries and skipped blocks. A recorded block is not a claim that every prescribed set was completed. **Reopen session** lets you continue a completed or skipped workout while retaining its exercise entries; its actual-duration and session-effort summary must be recorded again when you finish.
 
-Use **Edit** under saved timed, power, machine and skill entries to correct actual measurements. Strength sets can be updated inline, including historical sets in a skipped block. **Remove** soft-deletes an entry and offers **Undo** for 12 seconds. Corrections recalculate affected records. Workout input drafts are held in this tab's session storage so saving another set or reloading does not clear them; they are not actual training logs until you press Log. Unfinished workout-builder drafts are also restored when reopened in the same tab.
+Use **Edit** under saved timed, power, machine and skill entries to correct actual measurements. Strength sets can be updated inline, including historical sets in a skipped block. **Remove** soft-deletes an entry and offers **Undo** for 12 seconds. Corrections recalculate affected records. Workout input drafts are held in this tab's session storage so saving another set or reloading does not clear them; they are not actual training logs until you press Log. Exercise and workout-builder drafts persist on this device across tab closures; see Automatic editor drafts below.
 
 Open **History** to search completed, in-progress and skipped sessions by workout, exercise or date. Open an exercise in the Library and choose **View exercise history** for its actual entries and links back to their workouts. Progress includes custom strength exercises, with equipment variants kept separate.
 
 When an app update is ready, a persistent banner appears at the top. Save your current entry and press **Update now**. Settings shows the installed build and offers **Check for app updates**. App updates do not clear training history. Different addresses still have separate local stores; use the same production address for real training.
+
+
+## Automatic editor drafts
+
+Exercise forms, workout builders and unfinished exercise targets save automatically on this device as you type. A status line confirms **Draft saved on this device**. Closing the editor, navigating away, reloading or closing the tab does not clear these drafts. Reopen **Create exercise**, **Create workout**, or the same workout editor to recover your work. If you were editing a block's targets, choose **Resume unfinished exercise targets**. You can deliberately discard those pending targets instead.
+
+Drafts are local to this browser and site address. They are not completed workouts, training logs or cloud-synced backups. A successful exercise or workout save clears only its own draft. If browser storage cannot save a draft, the editor displays a warning instead of claiming it was saved. Clearing site data removes local drafts.
